@@ -1,3 +1,16 @@
+
+---------------------------------------------------
+            yield scrapy.Request(url=item["GOODS_URL"], callback=self.parse_detail)
+            # print(item["GOODS_URL"])
+
+    def parse_detail(self, response):
+
+        # div = response.xpath('//div[@class="extend"]/ul')
+        # print(response.url)
+        print('结束=============================================================')
+
+为啥无法回调
+---------------------------------------------------
 response的类型：
 <class 'scrapy.http.response.html.HtmlResponse'>
 

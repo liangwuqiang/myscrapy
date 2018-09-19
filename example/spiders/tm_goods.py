@@ -32,11 +32,11 @@ class TmGoodsSpider(scrapy.Spider):
 
             # yield scrapy.Request(url=item["GOODS_URL"], meta={'item': item}, callback=self.parse_detail,
             #                      dont_filter=True)
-            yield scrapy.Request(url=item["GOODS_URL"], meta={'item': item}, callback=self.parse_detail,)
+            yield scrapy.Request(url=item["GOODS_URL"], callback=self.parse_detail)
             # print(item["GOODS_URL"])
 
     def parse_detail(self, response):
 
         # div = response.xpath('//div[@class="extend"]/ul')
-        print(response.url)
+        # print(response.url)
         print('结束=============================================================')
