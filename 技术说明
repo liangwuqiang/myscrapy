@@ -10,6 +10,9 @@
         print('结束=============================================================')
 
 为啥无法回调
+解决 使用scrapy爬取淘宝页面的时候，在提交http请求时出现debug信息Forbidden by robots.txt，看来是请求被拒绝了。
+默认scrapy遵守robot协议
+在setting改变ROBOTSTXT_OBEY为False，让scrapy不要遵守robot协议，之后就能正常爬取了
 ---------------------------------------------------
 response的类型：
 <class 'scrapy.http.response.html.HtmlResponse'>
