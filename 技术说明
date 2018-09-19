@@ -1,0 +1,24 @@
+response的类型：
+<class 'scrapy.http.response.html.HtmlResponse'>
+
+ip_list = response.xpath('//table[@id="ip_list"]')的类型
+<class 'scrapy.selector.unified.Selector'>
+
+------------------------------------------------------------------------
+
+html = response.xpath("/html/body")
+tr = html.xpath(".//tr") #搜索body下的所有tr必须加上'.', 否则搜索的是整个文档的所有tr
+
+直接使用 tr = html.xpath("tr")  无响应 不知道为啥不行？
+----------------------------------------------
+
+cmdline.execute("scrapy crawl xici -o xici.csv".split())
+return items   可以有csv输出
+yield items  没有输出
+----------------------------------------------
+
+西刺中
+print(response.body.decode('utf-8'))  可行
+天猫中
+print(response.body.decode('gbk')) 不行  无法解码
+body本身返回的是byte类型，这里跳过吧

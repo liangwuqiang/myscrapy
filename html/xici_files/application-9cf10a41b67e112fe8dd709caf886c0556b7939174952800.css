@@ -1,0 +1,402 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  /*vertical-align: baseline;*/
+  background: transparent; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+a:hover {
+  text-decoration: underline; }
+
+em {
+  font-style: normal;
+  font-weight: bold; }
+
+body {
+  line-height: 1.4em; }
+
+ul li {
+  list-style: none; }
+
+ol li {
+  list-style: decimal inside; }
+
+blockquote, q {
+  quotes: none; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+/* remove textarea resize at Safari */
+textarea {
+  resize: none; }
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Clear Fix */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  display: inline-block; }
+
+/* Hide from IE Mac \*/
+.clearfix {
+  display: block; }
+
+/* End hide from IE Mac */
+/*
+
+
+
+
+*/
+
+
+@charset "UTF-8";
+body {
+  background-image: url(/images/bg.jpg);
+  border-top: 3px solid #FAB94A;
+  text-align: center;
+  font-family: courier new,courier,monospace;
+  font-size: 13px; }
+
+#myurl {
+  position: absolute;
+  font-weight: bold;
+  color: #EA5834;
+  top: 60px;
+  left: 126px;
+  font-size: 18px; }
+
+#wrapper {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 1000px;
+  min-width: 800px; }
+
+#header {
+  height: 120px;
+  border-bottom: 1px solid #ccc;
+  position: relative; }
+
+#body {
+  border-top: 1px solid #fff; }
+
+#logo {
+  position: absolute;
+  top: 25px;
+  left: 0px; }
+
+h1 {
+  font-family: '微软雅黑';
+  font-size: 24px;
+  position: absolute;
+  top: 35px;
+  left: 80px; }
+
+.main {
+  width: 70%;
+  float: left;
+  background-color: #f8f8f8; }
+
+.side {
+  background-color: #f8f8f8;
+  float: right;
+  text-align: left;
+  width: 28%;
+  font-size: 13px; }
+  .side img {
+    width: 100%; }
+  .side h2 {
+    background-color: #59B145;
+    color: #fff;
+    text-align: left;
+    line-height: 26px;
+    text-indent: 1em;
+    margin-bottom: 5px; }
+
+#ip_list {
+  width: 100%; }
+
+#body {
+  padding-top: 10px; }
+
+#left {
+  float: left;
+  width: 475px; }
+  #left h2 {
+    background-color: #59B145; }
+
+#right {
+  float: right;
+  width: 475px; }
+  #right h2 {
+    background-color: #008FD6; }
+
+.home h2 {
+  font-size: 16px;
+  padding: 0;
+  color: #fff; }
+.home table#ip_list {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc; }
+  .home table#ip_list h2 {
+    float: left;
+    line-height: 20px; }
+  .home table#ip_list a.more {
+    float: right;
+    line-height: 20px;
+    color: #fff; }
+  .home table#ip_list tr.subtitle th {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #ededed; }
+  .home table#ip_list td {
+    border-bottom: 0; }
+.home .desc {
+  border: 1px solid #ccc;
+  padding: 10px;
+  line-height: 1.6em;
+  margin: 20px 0; }
+  .home .desc span {
+    color: red;
+    font-size: 16px;
+    font-weight: bold; }
+  .home .desc a {
+    color: #EA5834;
+    font-weight: bold; }
+.home #left .desc {
+  color: #59B145; }
+.home #right .desc {
+  color: #008FD6; }
+.home table {
+  width: 100%; }
+  .home table td {
+    border-bottom: 1px dashed #ccc;
+    padding: 5px 0; }
+
+.by_area {
+  margin-top: 20px; }
+  .by_area li {
+    float: left;
+    margin-right: 1em; }
+
+#reminder {
+  color: #59B145;
+  border: 1px solid #59B145;
+  padding: 10px; }
+  #reminder a {
+    color: #EA5834;
+    text-decoration: underline; }
+
+#nav {
+  position: absolute;
+  right: 0;
+  bottom: 5px; }
+  #nav li {
+    float: left;
+    margin-left: 20px; }
+    #nav li a {
+      font-size: 14px; }
+      #nav li a.active {
+        color: #EA5834; }
+
+.bar {
+  border: 1px solid #bebebe;
+  width: 100px;
+  height: 8px; }
+  .bar .fast {
+    background-color: #59B145; }
+  .bar .medium {
+    background-color: #FAB94A; }
+  .bar .slow {
+    background-color: #c50c2e; }
+  .bar .bar_inner {
+    height: 8px; }
+
+table {
+  background-color: #f9f9f9; }
+
+#ip_list th {
+  background-color: #008FD6;
+  padding: 3px 10px;
+  color: #fff; }
+#ip_list td {
+  padding: 3px 10px; }
+#ip_list tr.odd {
+  background-color: #fff; }
+
+#bread {
+  margin-bottom: 5px; }
+
+.pagination {
+  margin-top: 10px;
+  text-align: right; }
+  .pagination em.current {
+    color: #008FD6;
+    border-bottom: 2px solid #008FD6; }
+
+.articles .main h2 {
+  background-color: #008FD6;
+  color: #fff;
+  font-size: 14px;
+  line-height: 26px;
+  text-indent: 1em; }
+.articles .article_body {
+  margin: 20px;
+  line-height: 1.6em; }
+  .articles .article_body p {
+    margin: 10px 0;
+    text-indent: 2em; }
+
+#footer {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  text-align: right;
+  line-height: 2em; }
+  #footer .site_name {
+    color: #008FD6; }
+  #footer .site_url {
+    color: #59B145; }
+  #footer .copy {
+    color: #EA5834; }
+
+#links {
+  margin-top: 20px; }
+  #links ul li {
+    float: left;
+    margin-right: 10px; }
+
+.article_image {
+  float: left; }
+
+.article_preview {
+  float: right;
+  width: 770px;
+  line-height: 1.6em;
+  color: #525252; }
+  .article_preview .title a {
+    font-size: 18px;
+    color: #59B145; }
+
+#articles_list li {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0; }
+
+.other-articles a {
+  margin: 0 10px;
+  line-height: 2em; }
+
+#api #api_main {
+  float: left;
+  width: 60%; }
+
+#api_right {
+  float: right;
+  width: 35%; }
+
+/* #### 移动设备 #### */
+@media screen and (max-device-width: 800px) {
+  #api #api_main {
+    width: 100%; }
+
+  #api_right {
+    width: 100%; }
+
+  #wrapper {
+    width: 100%;
+    min-width: auto;
+    font-size: 13px; }
+
+  #ip_list td {
+    padding: 2px; }
+
+  #ip_list th {
+    padding: 2px; }
+
+  .sideimg img {
+    width: 100%; }
+
+  .article_body img {
+    max-width: 100%; } }
+/* #### 移动设备 #### */
+@media screen and (max-device-width: 480px) {
+  #wrapper {
+    width: 100%;
+    font-size: 13px;
+    min-width: auto; }
+
+  .main {
+    width: 100%;
+    float: none;
+    line-height: 1.6em; }
+
+  #nav {
+    line-height: 1.6em; }
+
+  .side {
+    float: none;
+    width: 100%; }
+    .side .img {
+      width: 80%; }
+
+  .sideimg img {
+    width: 100%; }
+
+  .country {
+    display: none; }
+
+  #header {
+    height: 160px; }
+
+  #articles_list .article_image {
+    float: none; }
+  #articles_list .article_preview {
+    float: none; } }
+h2 {
+  color: #008FD6;
+  font-size: 14px; }
+
+.row {
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 20px; }
+
+.content {
+  margin-top: 1em; }
+
+#apilink {
+  color: #EA5834; }
+
+.orange {
+  color: #EA5834; }
