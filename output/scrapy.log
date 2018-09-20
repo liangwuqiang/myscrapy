@@ -1,0 +1,792 @@
+2018-09-20 11:00:54 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-09-20 11:00:54 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (default, Apr  1 2018, 05:46:30) - [GCC 7.3.0], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-34-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-09-20 11:00:54 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'example', 'FEED_FORMAT': 'csv', 'FEED_URI': 'results.csv', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'example.spiders', 'SPIDER_MODULES': ['example.spiders']}
+2018-09-20 11:00:54 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-20 11:00:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-20 11:00:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-20 11:00:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2018-09-20 11:00:54 [scrapy.core.engine] INFO: Spider opened
+2018-09-20 11:00:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-20 11:00:54 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-20 11:00:54 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26spm%3Da220m.1000858.1000724.4.57965c21rVU2sC%26q%3D%25C5%25AE%25D7%25B0%26sort%3Dd%26style%3Dg%26from%3Dmallfp..pc_1_suggest%26suggest%3D0_1%26active%3D2> from <GET https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2#J_Filter>
+2018-09-20 11:00:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://pass.tmall.com/add?cookie2=170d4fdf26323ec001923196e3766dcc&t=bdb40fad22baec94aab166ae94b91057&_tb_token_=55b15be83e35b&tmsc=1537412455267000&opi=11.8.51.74&pacc=DxDTNfnbGP_ti4x8OE4Dsg==&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26spm%3Da220m.1000858.1000724.4.57965c21rVU2sC%26q%3D%25C5%25AE%25D7%25B0%26sort%3Dd%26style%3Dg%26from%3Dmallfp..pc_1_suggest%26suggest%3D0_1%26active%3D2> from <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26spm%3Da220m.1000858.1000724.4.57965c21rVU2sC%26q%3D%25C5%25AE%25D7%25B0%26sort%3Dd%26style%3Dg%26from%3Dmallfp..pc_1_suggest%26suggest%3D0_1%26active%3D2>
+2018-09-20 11:00:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?tbpm=1&spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2> from <GET https://pass.tmall.com/add?cookie2=170d4fdf26323ec001923196e3766dcc&t=bdb40fad22baec94aab166ae94b91057&_tb_token_=55b15be83e35b&tmsc=1537412455267000&opi=11.8.51.74&pacc=DxDTNfnbGP_ti4x8OE4Dsg==&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26spm%3Da220m.1000858.1000724.4.57965c21rVU2sC%26q%3D%25C5%25AE%25D7%25B0%26sort%3Dd%26style%3Dg%26from%3Dmallfp..pc_1_suggest%26suggest%3D0_1%26active%3D2>
+2018-09-20 11:00:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2> from <GET https://list.tmall.com/search_product.htm?tbpm=1&spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2>
+2018-09-20 11:00:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2> (referer: None)
+2018-09-20 11:00:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=574427103999&skuId=4611686592854491903&user_id=3838526892&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:00:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=564175119642&skuId=4611686582602507546&user_id=3434342272&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:00:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=565587139587&skuId=3582114913870&user_id=2946310067&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:00:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=565779249210&skuId=3753089130992&user_id=3018341193&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:00:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=575191154153&skuId=3937514350904&user_id=3301198848&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:00:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=576023255872&skuId=3783105508755&user_id=3330078988&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:00:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=567300221524&skuId=3958082839559&user_id=2159555508&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:00:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=526143622514&skuId=3132121858025&user_id=2086112839&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:00:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=561646062573&skuId=3570742932552&user_id=2114349407&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:00:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=536302361311&skuId=4611686554729749215&user_id=749769391&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:00:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=575335684666&skuId=3777430204250&user_id=2233272961&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:00:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=572350070747&skuId=4611686590777458651&user_id=843879555&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:00:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=564373959099&skuId=3729003615998&user_id=3547956770&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:00:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=571357292979&skuId=3703622337330&user_id=196993935&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=558794058846&skuId=3475918768413&user_id=2254431515&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=564831115755&skuId=4611686583258503659&user_id=3077745109&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=573529275270&skuId=4611686591956663174&user_id=2983366224&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=574196527355&skuId=3752387797659&user_id=3296510925&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/2946310067/TB1W5HPhQ9WBuNjSspeXXaz5VXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:00 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/2946310067/TB1W5HPhQ9WBuNjSspeXXaz5VXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=564781208013&skuId=4611686583208595917&user_id=2265724160&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=565587139587&skuId=3582114913870&user_id=2946310067&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '网红同款牛仔裤女春秋装2018新款夏韩版显瘦宽松樱田川岛直筒裤子',
+ 'GOODS_PRICE': '59.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=565587139587&skuId=3582114913870&user_id=2946310067&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '右风左岸旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCk0MCvYvmNLMWTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/2946310067/TB1W5HPhQ9WBuNjSspeXXaz5VXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/2114349407/TB1r_m8a3jN8KJjSZFCXXb3GpXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:01 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/2114349407/TB1r_m8a3jN8KJjSZFCXXb3GpXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=561646062573&skuId=3570742932552&user_id=2114349407&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '广东,  汕头',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '运动裤女夏2018新款学生韩版宽松原宿bf哈伦裤薄款秋百搭休闲裤子',
+ 'GOODS_PRICE': '59.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=561646062573&skuId=3570742932552&user_id=2114349407&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '佐美淇旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCHYMmv0OFQWMWTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/2114349407/TB1r_m8a3jN8KJjSZFCXXb3GpXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/749769391/TB1cEzGaaSWBuNjSsrbXXa0mVXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:02 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/749769391/TB1cEzGaaSWBuNjSsrbXXa0mVXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=536302361311&skuId=4611686554729749215&user_id=749769391&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '广东,  广州',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '高腰牛仔裤女九分裤2018春秋新款韩版显瘦秋装紧身小脚加绒长裤子',
+ 'GOODS_PRICE': '49.90',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=536302361311&skuId=4611686554729749215&user_id=749769391&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '爱斯麦乐驹专卖店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UMGQSMGxSvGkY.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/749769391/TB1cEzGaaSWBuNjSsrbXXa0mVXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/2233272961/TB2GlT_dHAaBuNjt_igXXb5ApXa_!!2233272961-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:05 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/2233272961/TB2GlT_dHAaBuNjt_igXXb5ApXa_!!2233272961-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=575335684666&skuId=3777430204250&user_id=2233272961&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '浙江省,  杭州市',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '2018新款运动裤女裤秋学生韩版宽松显瘦ulzzang百搭原宿风bf休闲',
+ 'GOODS_PRICE': '59.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=575335684666&skuId=3777430204250&user_id=2233272961&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '茜子澜旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCIGvGIuvCkLvQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/2233272961/TB2GlT_dHAaBuNjt_igXXb5ApXa_!!2233272961-0-item_pic.jpg']}
+2018-09-20 11:01:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=566928330898&skuId=3604904316325&user_id=2937354952&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=571754264001&skuId=3879513619543&user_id=3896532319&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/3838526892/TB2qzeXJACWBuNjy0FaXXXUlXXa_!!3838526892-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:05 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/3838526892/TB2qzeXJACWBuNjy0FaXXXUlXXa_!!3838526892-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=574359822338&skuId=3924174223392&user_id=3572611766&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=574427103999&skuId=4611686592854491903&user_id=3838526892&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '休闲裤女秋2018新款九分学生韩版宽松显瘦女生帅气裤子潮运动裤女',
+ 'GOODS_PRICE': '59.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=574427103999&skuId=4611686592854491903&user_id=3838526892&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '利恋旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGgGOm8yMCgSvgTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/3838526892/TB2qzeXJACWBuNjy0FaXXXUlXXa_!!3838526892-0-item_pic.jpg']}
+2018-09-20 11:01:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/3434342272/TB1llUGeBfM8KJjSZFhXXcRyFXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:06 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/3434342272/TB1llUGeBfM8KJjSZFhXXcRyFXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=564175119642&skuId=4611686582602507546&user_id=3434342272&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': 'ins超火的牛仔裤女春秋2018新款韩版显瘦高腰紧身小脚黑色九分裤',
+ 'GOODS_PRICE': '69.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=564175119642&skuId=4611686582602507546&user_id=3434342272&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '韩蜓旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGQGMmv0vCIuvgTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/3434342272/TB1llUGeBfM8KJjSZFhXXcRyFXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/2086112839/TB1YbRSxljTBKNjSZFDXXbVgVXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:06 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/2086112839/TB1YbRSxljTBKNjSZFDXXbVgVXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=526143622514&skuId=3132121858025&user_id=2086112839&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '广东,  广州',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '破洞牛仔外套女短款韩版春秋短外套修身牛仔上衣服女装2018新款潮',
+ 'GOODS_PRICE': '69.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=526143622514&skuId=3132121858025&user_id=2086112839&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '红笛格旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCN4MCHYvCgGOQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/2086112839/TB1YbRSxljTBKNjSZFDXXbVgVXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=556404523097&skuId=3479393612886&user_id=2075702280&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=537971342221&skuId=3205646878403&user_id=2121584173&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/196993935/TB1EfJ0cRgXBuNjt_hNXXaEiFXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:08 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/196993935/TB1EfJ0cRgXBuNjt_hNXXaEiFXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=571357292979&skuId=3703622337330&user_id=196993935&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '上海',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '女装 花式开领衬衫(长袖) 408902 优衣库UNIQLO',
+ 'GOODS_PRICE': '149.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=571357292979&skuId=3703622337330&user_id=196993935&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '优衣库官方旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvFkLOFkGOFvb.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/196993935/TB1EfJ0cRgXBuNjt_hNXXaEiFXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i3/843879555/TB2S8A6rviSBuNkSnhJXXbDcpXa_!!843879555-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:08 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i3/843879555/TB2S8A6rviSBuNkSnhJXXbDcpXa_!!843879555-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=572350070747&skuId=4611686590777458651&user_id=843879555&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '广东,  广州',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '破洞牛仔裤女夏九分裤春秋2018新款韩版学生bf百搭高腰宽松长裤子',
+ 'GOODS_PRICE': '68.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=572350070747&skuId=4611686590777458651&user_id=843879555&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '慕汀服饰旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UOmQGOmcSMF8b.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i3/843879555/TB2S8A6rviSBuNkSnhJXXbDcpXa_!!843879555-0-item_pic.jpg']}
+2018-09-20 11:01:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=574237999742&skuId=3918851066349&user_id=2980078055&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=573612384260&skuId=3747079736658&user_id=1800774547&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/TB1r2djbb9YBuNjy0FgYXIxcXXa_M2.SS2> (referer: None)
+2018-09-20 11:01:11 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/TB1r2djbb9YBuNjy0FgYXIxcXXa_M2.SS2> referred in <None>
+2018-09-20 11:01:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=564373959099&skuId=3729003615998&user_id=3547956770&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '2018新款春秋紧身小脚牛仔裤女九分高腰ins超火不规则初恋长裤夏',
+ 'GOODS_PRICE': '79.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=564373959099&skuId=3729003615998&user_id=3547956770&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '梦舒芳旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvG80MGkbMCcuvNTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/TB1r2djbb9YBuNjy0FgYXIxcXXa_M2.SS2']}
+2018-09-20 11:01:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/2983366224/TB2Ud62Dx9YBuNjy0FfXXXIsVXa_!!2983366224-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:11 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/2983366224/TB2Ud62Dx9YBuNjy0FfXXXIsVXa_!!2983366224-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=573529275270&skuId=4611686591956663174&user_id=2983366224&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '连帽加绒卫衣女早秋装2018新款长袖韩版宽松百搭chic上衣潮外套春',
+ 'GOODS_PRICE': '79.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=573529275270&skuId=4611686591956663174&user_id=2983366224&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '玩未旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCk4vGvLMCIyMNTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/2983366224/TB2Ud62Dx9YBuNjy0FfXXXIsVXa_!!2983366224-0-item_pic.jpg']}
+2018-09-20 11:01:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/2254431515/O1CN011N3uUUI0sF8G4SH_!!2254431515.jpg> (referer: None)
+2018-09-20 11:01:11 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/2254431515/O1CN011N3uUUI0sF8G4SH_!!2254431515.jpg> referred in <None>
+2018-09-20 11:01:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=558794058846&skuId=3475918768413&user_id=2254431515&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '河南,  郑州',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '黑色牛仔裤女长裤紧身小脚裤春秋2018新款韩版高腰显瘦铅笔裤子女',
+ 'GOODS_PRICE': '79.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=558794058846&skuId=3475918768413&user_id=2254431515&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '萌路旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCIbMmQGvF8YMQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/2254431515/O1CN011N3uUUI0sF8G4SH_!!2254431515.jpg']}
+2018-09-20 11:01:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=557767543695&skuId=3680646706709&user_id=857879275&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=574762041423&skuId=4611686593189429327&user_id=2143459357&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/2159555508/TB2ncl9kb1YBuNjSszhXXcUsFXa_!!2159555508-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:13 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/2159555508/TB2ncl9kb1YBuNjSszhXXcUsFXa_!!2159555508-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/2265724160/TB26tIovVooBKNjSZFPXXXa2XXa_!!2265724160.jpg> (referer: None)
+2018-09-20 11:01:13 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/2265724160/TB26tIovVooBKNjSZFPXXXa2XXa_!!2265724160.jpg> referred in <None>
+2018-09-20 11:01:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=567300221524&skuId=3958082839559&user_id=2159555508&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '湖南省,  株洲市',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '女裤秋季哈伦裤女夏季薄款九分小脚显瘦西装裤长裤黑色高腰休闲裤',
+ 'GOODS_PRICE': '68.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=567300221524&skuId=3958082839559&user_id=2159555508&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': 'ynchujian衣诺初见旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCHbOF8bMF8WONTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/2159555508/TB2ncl9kb1YBuNjSszhXXcUsFXa_!!2159555508-0-item_pic.jpg']}
+2018-09-20 11:01:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=564781208013&skuId=4611686583208595917&user_id=2265724160&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '广东省,  广州市',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '2件59】短袖t恤女夏装2018新款宽松韩版学生条纹半袖早秋女装上衣',
+ 'GOODS_PRICE': '59.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=564781208013&skuId=4611686583208595917&user_id=2265724160&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '话题旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCILMFcyMmHLvNTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/2265724160/TB26tIovVooBKNjSZFPXXXa2XXa_!!2265724160.jpg']}
+2018-09-20 11:01:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=565312295624&skuId=3742747234745&user_id=2056219299&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=574446282678&skuId=4611686592873670582&user_id=3354497751&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/3572611766/TB2HBMCyvuSBuNkHFqDXXXfhVXa_!!3572611766-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:14 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/3572611766/TB2HBMCyvuSBuNkHFqDXXXfhVXa_!!3572611766-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=557511273019&skuId=4611686575938660923&user_id=2937436463&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=574359822338&skuId=3924174223392&user_id=3572611766&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '运动裤女韩版宽松2018新款秋季休闲女裤小脚长裤百搭显瘦学生裤子',
+ 'GOODS_PRICE': '79.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=574359822338&skuId=3924174223392&user_id=3572611766&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '炫主题旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvG8uvCxYvFcLMgTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/3572611766/TB2HBMCyvuSBuNkHFqDXXXfhVXa_!!3572611766-0-item_pic.jpg']}
+2018-09-20 11:01:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=559015891559&skuId=4611686577443279463&user_id=1035301420&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/3296510925/TB25DonX4TpK1RjSZFKXXa2wXXa_!!3296510925-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:16 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/3296510925/TB25DonX4TpK1RjSZFKXXa2wXXa_!!3296510925-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=574196527355&skuId=3752387797659&user_id=3296510925&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '广东,  深圳',
+ 'GOODS_NAME': '牛仔外套女2018春秋新款韩版蝙蝠袖短款百搭宽松bf风学生牛仔夹克',
+ 'GOODS_PRICE': '59.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=574196527355&skuId=3752387797659&user_id=3296510925&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '浪姿花旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGISMC8YvmkyMQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/3296510925/TB25DonX4TpK1RjSZFKXXa2wXXa_!!3296510925-0-item_pic.jpg']}
+2018-09-20 11:01:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/TB19nPKOXXXXXakapXXXXXXXXXX_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:17 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/TB19nPKOXXXXXakapXXXXXXXXXX_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=537971342221&skuId=3205646878403&user_id=2121584173&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '嘉兴市',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '春秋新款针织衫蝙蝠袖毛衣女秋冬外套宽松上衣韩版短款百搭打底衫',
+ 'GOODS_PRICE': '58.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=537971342221&skuId=3205646878403&user_id=2121584173&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '贝兰卡旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCHyvF84MmHuvWTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/TB19nPKOXXXXXakapXXXXXXXXXX_!!0-item_pic.jpg']}
+2018-09-20 11:01:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=571859828780&skuId=3713370716993&user_id=196993935&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/3301198848/TB26aLYBBmWBuNkSndVXXcsApXa_!!3301198848-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:18 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/3301198848/TB26aLYBBmWBuNkSndVXXcsApXa_!!3301198848-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i3/2937354952/TB14HHKmpkoBKNjSZFkXXb4tFXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:18 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i3/2937354952/TB14HHKmpkoBKNjSZFkXXb4tFXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/3896532319/TB2CKGnmkomBKNjSZFqXXXtqVXa_!!3896532319-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:18 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/3896532319/TB2CKGnmkomBKNjSZFqXXXtqVXa_!!3896532319-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=575191154153&skuId=3937514350904&user_id=3301198848&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '广东,  东莞',
+ 'GOODS_NAME': '牛仔裤女春秋2018新款韩版显瘦宽松老爹网红同款樱田川岛直筒裤子',
+ 'GOODS_PRICE': '69.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=575191154153&skuId=3937514350904&user_id=3301198848&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '欧淑芬旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGvWvFHSOmg0ONTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/3301198848/TB26aLYBBmWBuNkSndVXXcsApXa_!!3301198848-0-item_pic.jpg']}
+2018-09-20 11:01:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=566928330898&skuId=3604904316325&user_id=2937354952&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': 'ulzzang运动裤女学生韩版宽松休闲ins超火阔腿裤子女秋装2018新款',
+ 'GOODS_PRICE': '83.70',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=566928330898&skuId=3604904316325&user_id=2937354952&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '凝享旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCkGMGvbMmkbvgTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i3/2937354952/TB14HHKmpkoBKNjSZFkXXb4tFXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=571754264001&skuId=3879513619543&user_id=3896532319&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': 'ins超火的裤子hiphop美式工装裤女宽松bf原宿潮牌直筒港味九分裤',
+ 'GOODS_PRICE': '69.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=571754264001&skuId=3879513619543&user_id=3896532319&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '修夏旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGgSMC8GvCvYOQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/3896532319/TB2CKGnmkomBKNjSZFqXXXtqVXa_!!3896532319-0-item_pic.jpg']}
+2018-09-20 11:01:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=575802242661&skuId=3780950084563&user_id=3868254608&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=564727557589&skuId=3736880534386&user_id=2259819996&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/TB1pTsUSpXXXXbjaFXXXXXXXXXX_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:19 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/TB1pTsUSpXXXXbjaFXXXXXXXXXX_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=556404523097&skuId=3479393612886&user_id=2075702280&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '浙江,  杭州',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': 'ins超火半身裙女2018新款中长款高腰长裙开叉一步黑秋冬包臀裙子',
+ 'GOODS_PRICE': '59.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=556404523097&skuId=3479393612886&user_id=2075702280&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '印孜旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCNuMFcWvCI4vNTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/TB1pTsUSpXXXXbjaFXXXXXXXXXX_!!0-item_pic.jpg']}
+2018-09-20 11:01:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=573244696946&skuId=4611686591672084850&user_id=3320366235&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i3/2980078055/TB2kRHiFVmWBuNjSspdXXbugXXa_!!2980078055-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:20 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i3/2980078055/TB2kRHiFVmWBuNjSspdXXbugXXa_!!2980078055-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=574237999742&skuId=3918851066349&user_id=2980078055&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '牛仔裤女春秋2018新款韩版显瘦chic高腰紧身小脚九分裤子长裤秋装',
+ 'GOODS_PRICE': '49.90',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=574237999742&skuId=3918851066349&user_id=2980078055&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': 'artinside旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCk4vmNuOmNbMQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i3/2980078055/TB2kRHiFVmWBuNjSspdXXbugXXa_!!2980078055-0-item_pic.jpg']}
+2018-09-20 11:01:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=574977507555&skuId=3766367057713&user_id=2114349407&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/2056219299/TB1WpAcXOMnBKNjSZFoXXbOSFXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:20 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/2056219299/TB1WpAcXOMnBKNjSZFoXXbOSFXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=565312295624&skuId=3742747234745&user_id=2056219299&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '福建省,  泉州市',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '小外套女春秋装短款2018新款韩版双面穿宽松bf原宿风夹克棒球服潮',
+ 'GOODS_PRICE': '89.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=565312295624&skuId=3742747234745&user_id=2056219299&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '韩贝娇旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCNbMCIYOFISOQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/2056219299/TB1WpAcXOMnBKNjSZFoXXbOSFXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=576085183181&skuId=4611686594512571085&user_id=843879555&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=575658421408&skuId=3782454765069&user_id=3679871160&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=574002132122&skuId=3922471695644&user_id=3868212520&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i3/3354497751/TB21O1rsCMmBKNjSZTEXXasKpXa_!!3354497751-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:23 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i3/3354497751/TB21O1rsCMmBKNjSZTEXXasKpXa_!!3354497751-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/3077745109/TB1gy1ao0nJ8KJjSszdXXaxuFXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:23 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/3077745109/TB1gy1ao0nJ8KJjSszdXXaxuFXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=574446282678&skuId=4611686592873670582&user_id=3354497751&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '2018新款早秋春季韩版卫衣女连帽潮ins宽松长袖chic超火外套上衣',
+ 'GOODS_PRICE': '59.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=574446282678&skuId=4611686592873670582&user_id=3354497751&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '辰库女装旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGvbMmQSMGcbvQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i3/3354497751/TB21O1rsCMmBKNjSZTEXXasKpXa_!!3354497751-0-item_pic.jpg']}
+2018-09-20 11:01:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=564831115755&skuId=4611686583258503659&user_id=3077745109&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '破洞牛仔裤女宽松九分裤2018新款韩版显瘦学生高腰bf乞丐哈伦裤子',
+ 'GOODS_PRICE': '68.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=564831115755&skuId=4611686583258503659&user_id=3077745109&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': 'artmaker旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGNuMGc0MFHWOQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/3077745109/TB1gy1ao0nJ8KJjSszdXXaxuFXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/196993935/TB2c8rADKySBuNjy1zdXXXPxFXa-196993935.jpg> (referer: None)
+2018-09-20 11:01:24 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/196993935/TB2c8rADKySBuNjy1zdXXXPxFXa-196993935.jpg> referred in <None>
+2018-09-20 11:01:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=571859828780&skuId=3713370716993&user_id=196993935&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '上海',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '女装 华夫格圆领T恤(七分袖) 409409 优衣库UNIQLO',
+ 'GOODS_PRICE': '99.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=571859828780&skuId=3713370716993&user_id=196993935&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '优衣库官方旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvFkLOFkGOFvb.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/196993935/TB2c8rADKySBuNjy1zdXXXPxFXa-196993935.jpg']}
+2018-09-20 11:01:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/3868254608/TB2qp2Vp8nTBKNjSZPfXXbf1XXa_!!3868254608-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:24 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/3868254608/TB2qp2Vp8nTBKNjSZPfXXbf1XXa_!!3868254608-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=575802242661&skuId=3780950084563&user_id=3868254608&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '2018韩版新款bf学生连帽卫衣女加绒加厚上衣服宽松百搭外套秋冬潮',
+ 'GOODS_PRICE': '79.90',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=575802242661&skuId=3780950084563&user_id=3868254608&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '虹萝旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGgLOmIbMmxWONTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/3868254608/TB2qp2Vp8nTBKNjSZPfXXbf1XXa_!!3868254608-0-item_pic.jpg']}
+2018-09-20 11:01:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=574200417038&skuId=3756181705916&user_id=3119459984&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=552645697355&skuId=4611686571073085259&user_id=2956249226&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i3/1800774547/TB2RS8UuBsmBKNjSZFsXXaXSVXa_!!1800774547-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:26 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i3/1800774547/TB2RS8UuBsmBKNjSZFsXXaXSVXa_!!1800774547-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=573612384260&skuId=3747079736658&user_id=1800774547&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '广东,  东莞',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '秋季哈伦裤女长裤2018新款韩版宽松休闲显瘦高腰小脚大码黑色裤子',
+ 'GOODS_PRICE': '59.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=573612384260&skuId=3747079736658&user_id=1800774547&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '彩蝶妃旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvFgWvmcuMm80MWTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i3/1800774547/TB2RS8UuBsmBKNjSZFsXXaXSVXa_!!1800774547-0-item_pic.jpg']}
+2018-09-20 11:01:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=564724392665&skuId=4611686583151780569&user_id=754255967&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=572592074616&skuId=4611686591019462520&user_id=2935383639&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i3/1035301420/TB2E2DrwVkoBKNjSZFEXXbrEVXa_!!1035301420-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:26 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i3/1035301420/TB2E2DrwVkoBKNjSZFEXXbrEVXa_!!1035301420-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=559015891559&skuId=4611686577443279463&user_id=1035301420&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '浙江省,  杭州市',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '慵懒风pp home早秋卫衣女潮ins连帽薄款韩版宽松2018新款长袖上衣',
+ 'GOODS_PRICE': '79.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=559015891559&skuId=4611686577443279463&user_id=1035301420&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '米子旗旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvFNGMFvWvFQyvNTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i3/1035301420/TB2E2DrwVkoBKNjSZFEXXbrEVXa_!!1035301420-0-item_pic.jpg']}
+2018-09-20 11:01:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i3/857879275/TB16_vlaA.HL1JjSZFlXXaiRFXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:27 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i3/857879275/TB16_vlaA.HL1JjSZFlXXaiRFXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/2259819996/TB2LWGdXwDqK1RjSZSyXXaxEVXa_!!2259819996-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:27 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/2259819996/TB2LWGdXwDqK1RjSZSyXXaxEVXa_!!2259819996-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=574038838962&skuId=4611686592466226866&user_id=3457939567&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=557767543695&skuId=3680646706709&user_id=857879275&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '湖北,  武汉',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '牛仔裤女春秋2018新款韩版显瘦高腰黑色学生紧身小脚九分裤子女装',
+ 'GOODS_PRICE': '49.90',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=557767543695&skuId=3680646706709&user_id=857879275&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '薇伦旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UOm8uOmcSvCcb.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i3/857879275/TB16_vlaA.HL1JjSZFlXXaiRFXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=564727557589&skuId=3736880534386&user_id=2259819996&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '河北省,  邢台市',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '秋冬堆堆领套头毛衣女短款修身长袖内搭卷边高领针织打底衫宽松',
+ 'GOODS_PRICE': '79.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=564727557589&skuId=3736880534386&user_id=2259819996&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '恒颐羊旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCIbOFgYOFkSMgTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/2259819996/TB2LWGdXwDqK1RjSZSyXXaxEVXa_!!2259819996-0-item_pic.jpg']}
+2018-09-20 11:01:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=566114329927&skuId=3631306845747&user_id=2987050982&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=575100259278&skuId=4611686593527647182&user_id=2261181316&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=566376199724&skuId=3593497296527&user_id=2254431515&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/2937436463/TB2zeR1awHqK1RjSZFkXXX.WFXa_!!2937436463-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/2937436463/TB2zeR1awHqK1RjSZFkXXX.WFXa_!!2937436463-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=557511273019&skuId=4611686575938660923&user_id=2937436463&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '早秋装卫衣女ins超火的上衣2018新款长袖韩版宽松百搭连帽外套潮',
+ 'GOODS_PRICE': '89.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=557511273019&skuId=4611686575938660923&user_id=2937436463&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '雅希恩旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCkGMGQGMCQLvWTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/2937436463/TB2zeR1awHqK1RjSZFkXXX.WFXa_!!2937436463-0-item_pic.jpg']}
+2018-09-20 11:01:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=565159622474&skuId=3575485256289&user_id=2217433315&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/2114349407/TB26qcRIxSYBuNjSsphXXbGvVXa_!!2114349407-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:31 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/2114349407/TB26qcRIxSYBuNjSsphXXbGvVXa_!!2114349407-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=574977507555&skuId=3766367057713&user_id=2114349407&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '广东,  汕头',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '春秋运动裤女学生韩版宽松原宿bf哈伦裤休闲百搭显瘦ulzzang裤子',
+ 'GOODS_PRICE': '59.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=574977507555&skuId=3766367057713&user_id=2114349407&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '佐美淇旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCHYMmv0OFQWMWTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/2114349407/TB26qcRIxSYBuNjSsphXXbGvVXa_!!2114349407-0-item_pic.jpg']}
+2018-09-20 11:01:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/3119459984/TB2JBZ1zOCYBuNkHFCcXXcHtVXa_!!3119459984-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:32 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/3119459984/TB2JBZ1zOCYBuNkHFCcXXcHtVXa_!!3119459984-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=574200417038&skuId=3756181705916&user_id=3119459984&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '港味裤子秋季2018新款潮韩版女士休闲运动裤微喇叭九分阔腿裤女裤',
+ 'GOODS_PRICE': '79.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=574200417038&skuId=3756181705916&user_id=3119459984&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '韩芙恋旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGHYOFQbOFk4MNTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/3119459984/TB2JBZ1zOCYBuNkHFCcXXcHtVXa_!!3119459984-0-item_pic.jpg']}
+2018-09-20 11:01:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=574801613711&skuId=3765169264786&user_id=3481090180&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/3868212520/TB2U_WXHeSSBuNjy0FlXXbBpVXa_!!3868212520-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/3868212520/TB2U_WXHeSSBuNjy0FlXXbBpVXa_!!3868212520-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=574002132122&skuId=3922471695644&user_id=3868212520&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '长袖女t恤2018新款韩版秋装宽松上衣百搭纯棉学生圆领白色打底衫',
+ 'GOODS_PRICE': '59.90',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=574002132122&skuId=3922471695644&user_id=3868212520&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '花仙慕旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGgLOmIYvC8yvNTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/3868212520/TB2U_WXHeSSBuNjy0FlXXbBpVXa_!!3868212520-0-item_pic.jpg']}
+2018-09-20 11:01:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/843879555/TB21GJSrj7nBKNjSZLeXXbxCFXa_!!843879555-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/843879555/TB21GJSrj7nBKNjSZLeXXbxCFXa_!!843879555-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=576085183181&skuId=4611686594512571085&user_id=843879555&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '广东,  广州',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': 'chic紧身高腰牛仔裤女春秋2018新款韩版显瘦网红同款九分小脚长裤',
+ 'GOODS_PRICE': '69.90',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=576085183181&skuId=4611686594512571085&user_id=843879555&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '慕汀服饰旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UOmQGOmcSMF8b.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/843879555/TB21GJSrj7nBKNjSZLeXXbxCFXa_!!843879555-0-item_pic.jpg']}
+2018-09-20 11:01:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=565156344301&skuId=3579490733214&user_id=3608086188&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/2956249226/TB1eKhIdpHM8KJjSZFwXXcibXXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/2956249226/TB1eKhIdpHM8KJjSZFwXXcibXXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=552645697355&skuId=4611686571073085259&user_id=2956249226&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '广东,  深圳',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '破洞牛仔裤女春秋2018新款韩版显瘦高腰紧身小脚夏装九分女裤长裤',
+ 'GOODS_PRICE': '79.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=552645697355&skuId=4611686571073085259&user_id=2956249226&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '蕾媛旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCkbMCI0OFIyMgTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/2956249226/TB1eKhIdpHM8KJjSZFwXXcibXXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/2143459357/TB2kBYfr.OWBKNjSZKzXXXfWFXa_!!2143459357-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:37 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/2143459357/TB2kBYfr.OWBKNjSZKzXXXfWFXa_!!2143459357-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=571973015727&skuId=4611686590400403631&user_id=3686963254&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=574762041423&skuId=4611686593189429327&user_id=2143459357&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '广东省,  广州市',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '2件79元】秋装2018新款长袖t恤初秋韩版宽松上衣秋季卫衣女装早秋',
+ 'GOODS_PRICE': '79.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=574762041423&skuId=4611686593189429327&user_id=2143459357&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '右姿旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCH0vGQbOFvbMWTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/2143459357/TB2kBYfr.OWBKNjSZKzXXXfWFXa_!!2143459357-0-item_pic.jpg']}
+2018-09-20 11:01:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=570931864594&skuId=3692008196889&user_id=3440730488&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=566154672134&skuId=3594361252409&user_id=2951100304&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=564439093146&skuId=3567732069102&user_id=196993935&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/754255967/TB1lSyvXuuSBuNjSsziXXbq8pXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:38 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/754255967/TB1lSyvXuuSBuNjSsziXXbq8pXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=564724392665&skuId=4611686583151780569&user_id=754255967&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '上海',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '牛仔裤女春秋2018新款韩版显瘦夏季高腰黑色紧身小脚铅笔长裤子潮',
+ 'GOODS_PRICE': '79.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=564724392665&skuId=4611686583151780569&user_id=754255967&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '蘑菇头小米旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UMG80vC8bOFxu.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/754255967/TB1lSyvXuuSBuNjSsziXXbq8pXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=563052087866&skuId=4611686581479475770&user_id=3167180832&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/3457939567/TB2bov.bi6guuRjy1XdXXaAwpXa_!!3457939567-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:38 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/3457939567/TB2bov.bi6guuRjy1XdXXaAwpXa_!!3457939567-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=574038838962&skuId=4611686592466226866&user_id=3457939567&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '牛仔裤女春秋2018新款韩版显瘦黑色破洞九分学生高腰弹力修身小脚',
+ 'GOODS_PRICE': '69.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=574038838962&skuId=4611686592466226866&user_id=3457939567&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '沃妃旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGQbMGkGOF8LMWTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/3457939567/TB2bov.bi6guuRjy1XdXXaAwpXa_!!3457939567-0-item_pic.jpg']}
+2018-09-20 11:01:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i3/3679871160/TB2yS.KpJknBKNjSZKPXXX6OFXa_!!3679871160-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:39 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i3/3679871160/TB2yS.KpJknBKNjSZKPXXX6OFXa_!!3679871160-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=575658421408&skuId=3782454765069&user_id=3679871160&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '连帽卫衣女2018秋季新款韩版宽松含棉慵懒风女士上衣百搭潮流学生',
+ 'GOODS_PRICE': '69.90',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=575658421408&skuId=3782454765069&user_id=3679871160&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '恩希亚旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGxuOFguvFHLvNTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i3/3679871160/TB2yS.KpJknBKNjSZKPXXX6OFXa_!!3679871160-0-item_pic.jpg']}
+2018-09-20 11:01:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/2254431515/TB2kAnAlKuSBuNjSsplXXbe8pXa_!!2254431515-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:40 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/2254431515/TB2kAnAlKuSBuNjSsplXXbe8pXa_!!2254431515-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=566376199724&skuId=3593497296527&user_id=2254431515&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '河南,  郑州',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '直筒牛仔裤女宽松秋装2018新款韩版显瘦喇叭九分裤 ins超火的裤子',
+ 'GOODS_PRICE': '89.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=566376199724&skuId=3593497296527&user_id=2254431515&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '萌路旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCIbMmQGvF8YMQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/2254431515/TB2kAnAlKuSBuNjSsplXXbe8pXa_!!2254431515-0-item_pic.jpg']}
+2018-09-20 11:01:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=558321819319&skuId=3504567797985&user_id=3295852692&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=574147950898&skuId=3918952370634&user_id=3853104708&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/2261181316/TB269BeX9zqK1RjSZPcXXbTepXa_!!2261181316.jpg> (referer: None)
+2018-09-20 11:01:42 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/2261181316/TB269BeX9zqK1RjSZPcXXbTepXa_!!2261181316.jpg> referred in <None>
+2018-09-20 11:01:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=575100259278&skuId=4611686593527647182&user_id=2261181316&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '广东,  广州',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '2018秋装新款打底衫秋衣外穿上衣服宽松长袖t恤韩版大码卫衣女潮',
+ 'GOODS_PRICE': '65.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=575100259278&skuId=4611686593527647182&user_id=2261181316&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '爵玛妮旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCILvFH4vFvYMgTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/2261181316/TB269BeX9zqK1RjSZPcXXbTepXa_!!2261181316.jpg']}
+2018-09-20 11:01:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=564961026602&skuId=3713539128466&user_id=1035301420&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/3320366235/TB2xu9fvDXYBeNkHFrdXXciuVXa_!!3320366235.jpg> (referer: None)
+2018-09-20 11:01:42 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/3320366235/TB2xu9fvDXYBeNkHFrdXXciuVXa_!!3320366235.jpg> referred in <None>
+2018-09-20 11:01:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=573244696946&skuId=4611686591672084850&user_id=3320366235&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '2件69】ins白色t恤女短袖2018新款韩范纯棉宽松韩版学生纯色体恤',
+ 'GOODS_PRICE': '69.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=573244696946&skuId=4611686591672084850&user_id=3320366235&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '诗与远方旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGvyvmvLMCIGMQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/3320366235/TB2xu9fvDXYBeNkHFrdXXciuVXa_!!3320366235.jpg']}
+2018-09-20 11:01:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/3608086188/TB2rF6Dqf9TBuNjy1zbXXXpepXa_!!3608086188-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:42 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/3608086188/TB2rF6Dqf9TBuNjy1zbXXXpepXa_!!3608086188-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=565156344301&skuId=3579490733214&user_id=3608086188&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '牛仔裤女宽松韩版学生bf百搭高腰春秋2018新款显瘦直筒初恋老爹裤',
+ 'GOODS_PRICE': '88.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=565156344301&skuId=3579490733214&user_id=3608086188&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '胤哲旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGxWOmN4MCH4ONTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/3608086188/TB2rF6Dqf9TBuNjy1zbXXXpepXa_!!3608086188-0-item_pic.jpg']}
+2018-09-20 11:01:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/3481090180/TB2u2i.p8jTBKNjSZFwXXcG4XXa_!!3481090180.jpg> (referer: None)
+2018-09-20 11:01:43 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/3481090180/TB2u2i.p8jTBKNjSZFwXXcG4XXa_!!3481090180.jpg> referred in <None>
+2018-09-20 11:01:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=574801613711&skuId=3765169264786&user_id=3481090180&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '早秋季2018新款黑色t恤女短袖纯色显瘦修身半高领针织打底衫薄款',
+ 'GOODS_PRICE': '49.90',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=574801613711&skuId=3765169264786&user_id=3481090180&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '法澳娜旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGQ4vFNSvmH4vNTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/3481090180/TB2u2i.p8jTBKNjSZFwXXcG4XXa_!!3481090180.jpg']}
+2018-09-20 11:01:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://detail.tmall.com/item.htm?id=528373427965&skuId=4611686546800815869&user_id=2217148345&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d> (referer: https://list.tmall.com/search_product.htm?spm=a220m.1000858.1000724.4.57965c21rVU2sC&q=%C5%AE%D7%B0&sort=d&style=g&from=mallfp..pc_1_suggest&suggest=0_1&active=2)
+2018-09-20 11:01:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i3/2951100304/TB1n6uCf1GSBuNjSspbXXciipXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:44 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i3/2951100304/TB1n6uCf1GSBuNjSspbXXciipXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=566154672134&skuId=3594361252409&user_id=2951100304&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '牛仔裤女春秋2018新款韩版显瘦超火直筒九分微喇叭chic夏网红同款',
+ 'GOODS_PRICE': '79.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=566154672134&skuId=3594361252409&user_id=2951100304&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '图丝雅旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCkbvFHWvmvWMNTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i3/2951100304/TB1n6uCf1GSBuNjSspbXXciipXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/3330078988/TB26R9SvOMnBKNjSZFoXXbOSFXa_!!3330078988-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:46 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/3330078988/TB26R9SvOMnBKNjSZFoXXbOSFXa_!!3330078988-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i3/196993935/TB21pt.zwKTBuNkSne1XXaJoXXa-196993935.jpg> (referer: None)
+2018-09-20 11:01:46 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i3/196993935/TB21pt.zwKTBuNkSne1XXaJoXXa-196993935.jpg> referred in <None>
+2018-09-20 11:01:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=576023255872&skuId=3783105508755&user_id=3330078988&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '秋冬新款慵懒风毛衣开衫女韩版宽松中长款绿色针织衫百搭学生外套',
+ 'GOODS_PRICE': '104.90',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=576023255872&skuId=3783105508755&user_id=3330078988&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '奴希格尔旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGvGvmNuOmk4ONTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/3330078988/TB26R9SvOMnBKNjSZFoXXbOSFXa_!!3330078988-0-item_pic.jpg']}
+2018-09-20 11:01:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=564439093146&skuId=3567732069102&user_id=196993935&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '上海',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '女装 圆领T恤(短袖) 406456 优衣库UNIQLO',
+ 'GOODS_PRICE': '79.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=564439093146&skuId=3567732069102&user_id=196993935&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '优衣库官方旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvFkLOFkGOFvb.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i3/196993935/TB21pt.zwKTBuNkSne1XXaJoXXa-196993935.jpg']}
+2018-09-20 11:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i3/3686963254/TB2ltEryXOWBuNjy0FiXXXFxVXa_!!3686963254.jpg> (referer: None)
+2018-09-20 11:01:48 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i3/3686963254/TB2ltEryXOWBuNjy0FiXXXFxVXa_!!3686963254.jpg> referred in <None>
+2018-09-20 11:01:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=571973015727&skuId=4611686590400403631&user_id=3686963254&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '2件59】2018新款夏装白色短袖t恤女装宽松韩版韩范学生半袖上衣潮',
+ 'GOODS_PRICE': '59.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=571973015727&skuId=4611686590400403631&user_id=3686963254&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '琳蜜旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGx4MCkLvGIbMNTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i3/3686963254/TB2ltEryXOWBuNjy0FiXXXFxVXa_!!3686963254.jpg']}
+2018-09-20 11:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/3440730488/TB2ALEFvQCWBuNjy0FaXXXUlXXa_!!3440730488-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:48 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/3440730488/TB2ALEFvQCWBuNjy0FaXXXUlXXa_!!3440730488-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=570931864594&skuId=3692008196889&user_id=3440730488&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '直筒牛仔裤女春秋2018新款韩版夏学生超火裤子显瘦chic微喇九分裤',
+ 'GOODS_PRICE': '89.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=570931864594&skuId=3692008196889&user_id=3440730488&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '花嫉女装旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGQ0vmcGvmQ4ONTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/3440730488/TB2ALEFvQCWBuNjy0FaXXXUlXXa_!!3440730488-0-item_pic.jpg']}
+2018-09-20 11:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/3295852692/TB1PlmGd.sIL1JjSZPiXXXKmpXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:48 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/3295852692/TB1PlmGd.sIL1JjSZPiXXXKmpXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=558321819319&skuId=3504567797985&user_id=3295852692&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '牛仔裤女春秋2018新款韩版显瘦学生高腰宽松九分老爹萝卜直筒阔腿',
+ 'GOODS_PRICE': '69.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=558321819319&skuId=3504567797985&user_id=3295852692&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '韩琳娅旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGISMFgbvCxSvgTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/3295852692/TB1PlmGd.sIL1JjSZPiXXXKmpXa_!!0-item_pic.jpg']}
+2018-09-20 11:01:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/2217148345/TB22N38DKuSBuNjSsplXXbe8pXa_!!2217148345-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:49 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/2217148345/TB22N38DKuSBuNjSsplXXbe8pXa_!!2217148345-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=528373427965&skuId=4611686546800815869&user_id=2217148345&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '福建,  厦门',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '黑色背心长裙打底中长款无袖吊带连衣裙女装春秋夏季2018新款衣服',
+ 'GOODS_PRICE': '55.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=528373427965&skuId=4611686546800815869&user_id=2217148345&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '甄度旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCIYMGH0Omv0MQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/2217148345/TB22N38DKuSBuNjSsplXXbe8pXa_!!2217148345-0-item_pic.jpg']}
+2018-09-20 11:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/3167180832/TB2M0vxiSYH8KJjSspdXXcRgVXa_!!3167180832.jpg> (referer: None)
+2018-09-20 11:01:50 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/3167180832/TB2M0vxiSYH8KJjSspdXXcRgVXa_!!3167180832.jpg> referred in <None>
+2018-09-20 11:01:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=563052087866&skuId=4611686581479475770&user_id=3167180832&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '衣服女秋装2018新款韩版百搭打底衫女长袖秋季修身纯棉T恤女上衣',
+ 'GOODS_PRICE': '69.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=563052087866&skuId=4611686581479475770&user_id=3167180832&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '焦点日记旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGHLMGH4vmgGvgTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/3167180832/TB2M0vxiSYH8KJjSspdXXcRgVXa_!!3167180832.jpg']}
+2018-09-20 11:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/2935383639/TB2eD6kwSMmBKNjSZTEXXasKpXa_!!2935383639.jpg> (referer: None)
+2018-09-20 11:01:50 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/2935383639/TB2eD6kwSMmBKNjSZTEXXasKpXa_!!2935383639.jpg> referred in <None>
+2018-09-20 11:01:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=572592074616&skuId=4611686591019462520&user_id=2935383639&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '【3件55元】2018新款秋装修身韩版纯棉上衣长袖t恤女短袖打底衫潮',
+ 'GOODS_PRICE': '55.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=572592074616&skuId=4611686591019462520&user_id=2935383639&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '茨言旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCkGMFv4vGxGOQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/2935383639/TB2eD6kwSMmBKNjSZTEXXasKpXa_!!2935383639.jpg']}
+2018-09-20 11:01:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/2987050982/TB2im0ralLoK1RjSZFuXXXn0XXa_!!2987050982-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:51 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/2987050982/TB2im0ralLoK1RjSZFuXXXn0XXa_!!2987050982-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=566114329927&skuId=3631306845747&user_id=2987050982&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '广东,  东莞',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '网红同款牛仔裤女春秋2018新款韩版宽松显瘦直筒复古chic超火裤子',
+ 'GOODS_PRICE': '69.90',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=566114329927&skuId=3631306845747&user_id=2987050982&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '列迪旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCk4MGNbvmk4vgTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/2987050982/TB2im0ralLoK1RjSZFuXXXn0XXa_!!2987050982-0-item_pic.jpg']}
+2018-09-20 11:01:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i4/2217433315/TB2HXsPHf5TBuNjSspcXXbnGFXa_!!2217433315-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:51 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i4/2217433315/TB2HXsPHf5TBuNjSspcXXbnGFXa_!!2217433315-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=565159622474&skuId=3575485256289&user_id=2217433315&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '福建省,  泉州市',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '短外套女春秋季学生韩版宽松秋天上衣2018秋装新款bf原宿风棒球服',
+ 'GOODS_PRICE': '69.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=565159622474&skuId=3575485256289&user_id=2217433315&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '邂逅小调旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvCIYMGQGvGvYMQTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i4/2217433315/TB2HXsPHf5TBuNjSspcXXbnGFXa_!!2217433315-0-item_pic.jpg']}
+2018-09-20 11:01:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/1035301420/TB21JRNapzqK1RjSZFCXXbbxVXa_!!1035301420-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:52 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/1035301420/TB21JRNapzqK1RjSZFCXXbbxVXa_!!1035301420-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=564961026602&skuId=3713539128466&user_id=1035301420&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '浙江省,  杭州市',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': 'chic早秋上衣连帽超火慵懒风卫衣女春秋薄款长袖韩版宽松2018新款',
+ 'GOODS_PRICE': '89.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=564961026602&skuId=3713539128466&user_id=1035301420&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '米子旗旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvFNGMFvWvFQyvNTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/1035301420/TB21JRNapzqK1RjSZFCXXbbxVXa_!!1035301420-0-item_pic.jpg']}
+2018-09-20 11:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i2/3853104708/TB2a6rDXzfguuRjSspaXXaXVXXa_!!3853104708-0-item_pic.jpg> (referer: None)
+2018-09-20 11:01:54 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i2/3853104708/TB2a6rDXzfguuRjSspaXXaXVXXa_!!3853104708-0-item_pic.jpg> referred in <None>
+2018-09-20 11:01:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=574147950898&skuId=3918952370634&user_id=3853104708&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '',
+ 'GOODS_NAME': '牛仔裤女春秋2018新款韩版显瘦黑色九分高腰花苞哈伦裤学生bf宽松',
+ 'GOODS_PRICE': '59.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=574147950898&skuId=3918952370634&user_id=3853104708&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '卡莲娅旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGgbvGHWMmcWONTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i2/3853104708/TB2a6rDXzfguuRjSspaXXaXVXXa_!!3853104708-0-item_pic.jpg']}
+2018-09-20 11:01:54 [scrapy.extensions.logstats] INFO: Crawled 120 pages (at 120 pages/min), scraped 59 items (at 59 items/min)
+2018-09-20 11:02:54 [scrapy.extensions.logstats] INFO: Crawled 120 pages (at 0 pages/min), scraped 59 items (at 0 items/min)
+2018-09-20 11:03:54 [scrapy.extensions.logstats] INFO: Crawled 120 pages (at 0 pages/min), scraped 59 items (at 0 items/min)
+2018-09-20 11:03:58 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.alicdn.com/bao/uploaded/i1/3018341193/TB1l3I1aQUmBKNjSZFOXXab2XXa_!!0-item_pic.jpg> (failed 1 times): User timeout caused connection failure: Getting http://img.alicdn.com/bao/uploaded/i1/3018341193/TB1l3I1aQUmBKNjSZFOXXab2XXa_!!0-item_pic.jpg took longer than 180.0 seconds..
+2018-09-20 11:04:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.alicdn.com/bao/uploaded/i1/3018341193/TB1l3I1aQUmBKNjSZFOXXab2XXa_!!0-item_pic.jpg> (referer: None)
+2018-09-20 11:04:01 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.alicdn.com/bao/uploaded/i1/3018341193/TB1l3I1aQUmBKNjSZFOXXab2XXa_!!0-item_pic.jpg> referred in <None>
+2018-09-20 11:04:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://detail.tmall.com/item.htm?id=565779249210&skuId=3753089130992&user_id=3018341193&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d>
+{'COMPANY_ADDRESS': '',
+ 'COMPANY_NAME': '浙江,  嘉兴',
+ 'GOODS_NAME': '毛衣外套女韩版2018新款秋装女装宽松长袖上衣春秋季短款针织开衫',
+ 'GOODS_PRICE': '69.00',
+ 'GOODS_URL': 'https://detail.tmall.com/item.htm?id=565779249210&skuId=3753089130992&user_id=3018341193&cat_id=2&is_b=1&rn=b55e3c1570304b2409c72e8923b7203d',
+ 'SHOP_NAME': '抹茶印象旗舰店',
+ 'SHOP_URL': '//rate.taobao.com/user-rate-UvGNYOmv0vFHSvWTT.htm',
+ 'file_urls': ['http://img.alicdn.com/bao/uploaded/i1/3018341193/TB1l3I1aQUmBKNjSZFOXXab2XXa_!!0-item_pic.jpg']}
+2018-09-20 11:04:01 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-09-20 11:04:01 [scrapy.extensions.feedexport] INFO: Stored csv feed (60 items) in: results.csv
+2018-09-20 11:04:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 1,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 1,
+ 'downloader/request_bytes': 56904,
+ 'downloader/request_count': 126,
+ 'downloader/request_method_count/GET': 126,
+ 'downloader/response_bytes': 19328530,
+ 'downloader/response_count': 125,
+ 'downloader/response_status_count/200': 121,
+ 'downloader/response_status_count/302': 4,
+ 'file_count': 60,
+ 'file_status_count/downloaded': 60,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 20, 3, 4, 1, 305714),
+ 'item_scraped_count': 60,
+ 'log_count/DEBUG': 247,
+ 'log_count/INFO': 11,
+ 'memusage/max': 951123968,
+ 'memusage/startup': 951123968,
+ 'request_depth_max': 1,
+ 'response_received_count': 121,
+ 'retry/count': 1,
+ 'retry/reason_count/twisted.internet.error.TimeoutError': 1,
+ 'scheduler/dequeued': 65,
+ 'scheduler/dequeued/memory': 65,
+ 'scheduler/enqueued': 65,
+ 'scheduler/enqueued/memory': 65,
+ 'start_time': datetime.datetime(2018, 9, 20, 3, 0, 54, 536845)}
+2018-09-20 11:04:01 [scrapy.core.engine] INFO: Spider closed (finished)

@@ -18,3 +18,6 @@ class TopgoodsItem(scrapy.Item):
     COMPANY_NAME = scrapy.Field()
     COMPANY_ADDRESS = scrapy.Field()
     
+    #图片链接
+    file_urls = scrapy.Field()
+    

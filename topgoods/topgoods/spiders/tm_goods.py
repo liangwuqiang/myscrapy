@@ -18,7 +18,9 @@ class TmGoodsSpider(scrapy.Spider):
         divs = response.xpath("//div[@id='J_ItemList']/div[@class='product']/div")
         if not divs:
             self.log( "List Page error--%s"%response.url )
-              
+        
+        print "Goods numbers: ",len(divs)
+        
         for div in divs:
             item=TopgoodsItem()
             #商品价格
@@ -28,7 +30,14 @@ class TmGoodsSpider(scrapy.Spider):
             #商品连接
             pre_goods_url = div.xpath("p[@class='productTitle']/a/@href")[0].extract()
             item["GOODS_URL"] = pre_goods_url if "http:" in pre_goods_url else ("http:"+pre_goods_url)
-            
+            #图片链接
+            try:
+                file_urls = div.xpath('div[@class="productImg-wrap"]/a[1]/img/@src|'
+                'div[@class="productImg-wrap"]/a[1]/img/@data-ks-lazyload').extract()[0]
+                item['file_urls'] = ["http:"+file_urls]
+            except Exception,e:
+                print "Error: ",e
+                import pdb;pdb.set_trace()
             yield scrapy.Request(url=item["GOODS_URL"],meta={'item':item},callback=self.parse_detail,
             dont_filter=True)
 
@@ -43,7 +52,8 @@ class TmGoodsSpider(scrapy.Spider):
         #店铺名称
         item["SHOP_NAME"] = div.xpath("li[1]/div/a/text()")[0].extract()
         #店铺连接
-        item["SHOP_URL"] = div.xpath("li[1]/div/a/@href")[0].extract()
+        pre_shop_url = div.xpath("li[1]/div/a/@href")[0].extract()
+        item["SHOP_URL"] = response.urljoin(pre_shop_url)
         #公司名称
         item["COMPANY_NAME"] = div.xpath("li[3]/div/text()")[0].extract().strip()
         #公司所在地

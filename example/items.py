@@ -10,12 +10,12 @@ import scrapy
 
 class ExampleItem(scrapy.Item):
     # 西刺代理
-    IP = scrapy.Field()
-    PORT = scrapy.Field()
-    POSITION = scrapy.Field()
-    TYPE = scrapy.Field()
-    SPEED = scrapy.Field()
-    LAST_CHECK_TIME = scrapy.Field()
+    # IP = scrapy.Field()
+    # PORT = scrapy.Field()
+    # POSITION = scrapy.Field()
+    # TYPE = scrapy.Field()
+    # SPEED = scrapy.Field()
+    # LAST_CHECK_TIME = scrapy.Field()
 
     # 天猫商城
     GOODS_PRICE = scrapy.Field()
@@ -25,3 +25,7 @@ class ExampleItem(scrapy.Item):
     SHOP_URL = scrapy.Field()
     COMPANY_NAME = scrapy.Field()
     COMPANY_ADDRESS = scrapy.Field()
+
+    # 图片链接
+    file_urls = scrapy.Field()
+

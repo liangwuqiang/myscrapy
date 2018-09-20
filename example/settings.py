@@ -90,3 +90,8 @@ ROBOTSTXT_OBEY = False
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 LOG_FILE = "scrapy.log"
+
+ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
+
+IMAGES_URLS_FIELD = 'file_urls'
+IMAGES_STORE = r'.'
