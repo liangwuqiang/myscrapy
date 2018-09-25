@@ -1,0 +1,146 @@
+MySQL安装成功，密码不能修改
+
+在连接mysql数据库的时候，使用命令sudo mysql -uroot -p连接数据库，由于没有设置密码，所以在需要输入密码的时候，直接按Enter键。
+
+步骤四：修改root密码
+
+update mysql.user set authentication_string=PASSWORD('adminlwq'), plugin='mysql_native_password' where user='root';
+
+步骤五：刷新
+
+flush privileges;
+
+最后重启终端，就可通过mysql -u root -p 免sudo登录mysql啦！
+
+---------------------
+
+本文来自 BT--YY 的CSDN 博客 ，全文地址请点击：https://blog.csdn.net/qq_35846773/article/details/80992155?utm_source=copy 
+
+--------------------------------------
+
+查看是否安装Mysql
+
+sudo netstat -tap | grep mysql
+找不到
+
+安装：
+
+sudo apt install mysql-server
+
+Mysql 连接测试
+
+mysql -u root -h localhost -p
+
+启动，停止，重启 Mysql命令
+
+sudo service mysql start
+sudo service mysql stop
+sudo service mysql restart
+
+-------------------------------------
+文件/etc/mysql/debian.cnf
+# Automatically generated for Debian scripts. DO NOT TOUCH!
+[client]
+host     = localhost
+user     = debian-sys-maint
+password = GIK0imYsvxBMNeFS
+socket   = /var/run/mysqld/mysqld.sock
+[mysql_upgrade]
+host     = localhost
+user     = debian-sys-maint
+password = GIK0imYsvxBMNeFS
+socket   = /var/run/mysqld/mysqld.sock
+
+修改数据库密码
+mysql -u debian-sys-maint -p 
+GIK0imYsvxBMNeFS
+
+mysql> use mysql;  
+
+mysql> update mysql.user set authentication_string=password('adminlwq') where user='root';
+
+mysql> update mysql.user set authentication_string=password('adminlwq') where user='root' and host='localhost';
+
+mysql> flush privileges;  
+
+mysql> quit
+
+service mysql restart
+---------------------------------------
+安装命令
+
+sudo apt-get install mysql-server
+sudo apt install mysql-client
+sudo apt install libmysqlclient-dev
+
+
+安装成功后可以通过下面的命令测试是否安装成功：
+
+sudo netstat -tap | grep mysql
+
+-------------------------------------------
+二、常用命令
+
+　　1、显示当前数据库服务器中的数据库列表：
+
+　　mysql> SHOW DATABASES;
+
+　　2、建立数据库：
+
+　　mysql> CREATE DATABASE 库名;
+
+　　3、建立数据表：
+
+　　mysql> USE 库名;
+
+　　mysql> CREATE TABLE 表名 (字段名 VARCHAR(20), 字段名 CHAR(1));
+
+　　4、删除数据库：
+
+　　mysql> DROP DATABASE 库名;
+
+　　5、删除数据表：
+
+　　mysql> DROP TABLE 表名;
+
+　　6、将表中记录清空：
+
+　　mysql> DELETE FROM 表名;
+
+　　7、往表中插入记录：
+
+　　mysql> INSERT INTO 表名 VALUES ("hyq","M");
+
+　　8、更新表中数据：
+
+　　mysql-> UPDATE 表名 SET 字段名1='a',字段名2='b' WHERE 字段名3='c';
+
+　　9、用文本方式将数据装入数据表中：
+
+　　mysql> LOAD DATA LOCAL INFILE "D:/mysql.txt" INTO TABLE 表名;
+
+　　10、导入.sql文件命令：
+
+　　mysql> USE 数据库名;
+
+　　mysql> SOURCE d:/mysql.sql;
+
+　　11、命令行修改root密码：
+
+　　mysql> UPDATE mysql.user SET password=PASSWORD('新密码') WHERE User='root';
+
+　　mysql> FLUSH PRIVILEGES;
+
+--------------------------------
+.删除mysql
+
+按顺序执行以下命令
+
+sudo apt-get autoremove --purge mysql-server-5.0
+sudo apt-get remove mysql-server
+sudo apt-get autoremove mysql-server
+sudo apt-get remove mysql-common 
+
+---------------------
+
+本文来自 liunian_siyu 的CSDN 博客 ，全文地址请点击：https://blog.csdn.net/liunian_siyu/article/details/53048314?utm_source=copy 
