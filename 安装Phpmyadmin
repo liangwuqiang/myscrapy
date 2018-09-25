@@ -1,0 +1,59 @@
+第三步 安装Phpmyadmin
+
+在命令行输入命令：
+
+$ sudo apt-get update
+$ sudo apt install phpmyadmin php-mbstring php-gettext
+
+
+在安装过程中会询问你一些问题：
+
+    第一个弹出的问题： 要用空格Space选中他们才能Enter继续
+    第二个弹出的问题：问你是否使用dbconfig-common来配置数据库，然后让你输入之前安装的mysql的密码
+    然后，会让你配置你的PHPmyadmin的密码和确认密码
+
+安装的过程会将PHPmyadmin和Apache的配置文件写入到/etc/apache2/conf-enabled/目录下，在PHPmyadmin和Apache运行的时候会自动从这里读取配置信息。
+
+接下来是激活PHP的mcrypt和mbstring扩展，通过下面的命令：
+
+$ sudo phpenmod mcrypt    # 这个不能通过
+$ sudo phpenmod mbstring
+
+-----------------------
+
+----------------------
+
+然后重启Apache:
+
+$ sudo systemctl restart apache2
+
+通过浏览器访问：
+
+https://domain_name_or_IP/phpmyadmin
+
+登录页面的账号密码就是上面设置过的。 
+
+
+sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+
+修改PHP配置文件
+
+$ sudo vim /etc/php/7.0/apache2/php.ini
+display_errors = On(显示错误日志，出现两次，都要改，不然无效)
+extension=php_mbstring.dll (开启mbstring)
+
+重启apache
+
+$ sudo /etc/init.d/apache2 restart
+
+
+给root赋予权限
+
+ grant ALL PRIVILEGES ON *.* to root@"localhost" identified by "longtel.com";
+ 给root所有权限
+ 主机为localhost
+
+
+访问端口主机IP/phpmyadmin,输入账号密码即可
+
+
