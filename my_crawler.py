@@ -36,7 +36,11 @@ class MyCrawler(object):
             # self.key_title = '.link_title'
             # self.key_content = '#article_content'
             self.key_title = '.title-article'
-            self.key_content = '.htmledit_views'
+            # self.key_content = '.htmledit_views'
+            self.key_content = '.markdown_views.prism-dracula'
+            # https://blog.csdn.net/weixin_36279318/article/details/79475388
+            self.key_content = '.article_content.clearfix.csdn-tracking-statistics'
+            # https://blog.csdn.net/qq_29186489/article/details/78661008
         elif 'www.codingpy.com' in self.url:  # 编程派网址
             self.key_title = '.header h1'
             self.key_content = '.article-content'
@@ -52,14 +56,13 @@ class MyCrawler(object):
         else:
             self.key_title = ''
             self.key_content = ''
+        print("标题关键字：" + self.key_title, "内容关键字：" + self.key_content)
 
     def get_html(self):
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0'}
         req = request.Request(self.url, headers=headers)
-        # req = request.Request(self.url)
         response = request.urlopen(req)
         self.html = response.read().decode('utf-8')
-        # print(html)
 
     def get_content(self):
         soup = BeautifulSoup(self.html, 'html.parser')
@@ -90,7 +93,7 @@ class MyCrawler(object):
                 filename = filename + ".png"
 
             try:
-                # request.urlretrieve(image_link_new, filename)
+                # request.urlretrieve(image_link_new, filename)  # 另一种下载图片的方式
                 res = requests.get(image_link_new)
                 with open(filename, 'wb') as f:
                     f.write(res.content)
@@ -103,25 +106,26 @@ class MyCrawler(object):
 
     def format_html(self):
         html_template = """<!DOCTYPE html>
-        <html><head><meta charset="UTF-8">
-        </head><body>
-        <p><a href="{origin}">原文链接</a></p>
-        <p><center><h1>{title}</h1></center></p>
-            {content}
-        </body></html>"""
+            <html><head><meta charset="UTF-8">
+            </head><body>
+            <p><a href="{origin}">原文链接</a></p>
+            <p><center><h1>{title}</h1></center></p>
+                {content}
+            </body></html>"""
         self.html = html_template.format(origin=self.url, title=self.title, content=self.content)
 
     def save_file(self):
         filename = "output/" + self.title + ".html"
         with open(filename, "w", encoding='UTF-8') as f:
             f.write(self.html)
-            # f.write(html.replace(u'\xa0', u' ').replace(u'\U0001f60a', u' '))
+            # f.write(html.replace(u'\xa0', u' ').replace(u'\U0001f60a', u' '))  # 去掉网页中的特殊字符
 
     def run(self):
         for url in self.urls:
             self.url = url
             self.get_key_word()
             if self.key_title == '' or self.key_content == '':
+                print("当前网页没法处理： ", self.url)
                 return
             self.get_html()
             self.get_content()
@@ -141,7 +145,7 @@ def main():
     # 简书
     urls = """
     
-http://python.jobbole.com/89091/
+https://blog.csdn.net/qq_29186489/article/details/78661008
 
         """
     crawler = MyCrawler(urls)

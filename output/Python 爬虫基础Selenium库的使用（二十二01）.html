@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+            <html><head><meta charset="UTF-8">
+            </head><body>
+            <p><a href="https://blog.csdn.net/weixin_36279318/article/details/79475388">原文链接</a></p>
+            <p><center><h1>Python 爬虫基础Selenium库的使用（二十二01）</h1></center></p>
+                <div class="markdown_views prism-dracula">
+<!-- flowchart 箭头图标 勿删 -->
+<svg style="display: none;" xmlns="http://www.w3.org/2000/svg"><path d="M5,0 0,2.5 5,5z" id="raphael-marker-block" stroke-linecap="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path></svg>
+<h2><a id="Selenium_0"></a>（一）Selenium基础</h2>
+<p>入门教程：<a href="http://www.selenium.org.cn/1598.html" rel="nofollow">Selenium官网教程</a><a></a></p>
+<h4><a id="1Selenium_3"></a>1.Selenium简介</h4>
+<p>Selenium是一个用于测试网站的自动化测试工具，支持各种浏览器包括Chrome、Firefox、Safari等主流界面浏览器，同时也支持phantomJS无界面浏览器。</p>
+<h4><a id="2_7"></a>2.支持多种操作系统</h4>
+<p>如Windows、Linux、IOS、Android等。</p>
+<h4><a id="3Selenium_11"></a>3.安装Selenium</h4>
+<pre><code>pip install Selenium
+</code></pre>
+<h4><a id="4_16"></a>4.安装浏览器驱动</h4>
+<p>Selenium3.x调用浏览器必须有一个webdriver驱动文件</p>
+<ol>
+<li>Chrome驱动文件下载：<a href="https://chromedriver.storage.googleapis.com/index.html?path=2.35/" rel="nofollow">点击下载chromedrive</a></li>
+<li>Firefox驱动文件下载:<a href="https://github.com/mozilla/geckodriver/releases" rel="nofollow">点解下载geckodriver</a></li>
+</ol>
+<h4><a id="5_23"></a>5.配置环境变量</h4>
+<p>设置浏览器的地址非常简单。 我们可以手动创建一个存放浏览器驱动的目录，如： F:\GeckoDriver , 将下载的浏览器驱动文件（例如：chromedriver、geckodriver）丢到该目录下。</p>
+<p>我的电脑–&gt;属性–&gt;系统设置–&gt;高级–&gt;环境变量–&gt;系统变量–&gt;Path，将“F:\GeckoDriver”目录添加到Path的值中。比如：Path字段;F:\GeckoDriver</p>
+<p><a href="http://www.testclass.net/selenium_python/selenium3-browser-driver/" rel="nofollow">参考浏览器驱动环境配置</a><a></a></p>
+<h2><a id="Selenium__36"></a>(二)Selenium 快速入门</h2>
+<p><a href="http://www.testclass.net/selenium_python/" rel="nofollow">入门参考文献：Selenium入门</a><a></a></p>
+<h4><a id="1Selenium8_40"></a>1.Selenium提供了8种定位方式:</h4>
+<ol>
+<li>id</li>
+<li>name</li>
+<li>class name</li>
+<li>tag name</li>
+<li>link text</li>
+<li>partial link text</li>
+<li>xpath</li>
+<li>css selector</li>
+</ol>
+<h4><a id="28_51"></a>2.定位元素的8种方式</h4>
+<p><a href="http://www.testclass.net/selenium_python/find-element/" rel="nofollow">参考：selenium元素定位</a><a></a></p>
+<table>
+<thead>
+<tr>
+<th align="left">定位一个元素</th>
+<th align="right">定位多个元素</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">find_element_by_id</td>
+<td align="right">find_elements_by_id</td>
+<td align="center">通过元素id定位</td>
+</tr>
+<tr>
+<td align="left">find_element_by_name</td>
+<td align="right">find_elements_by_name</td>
+<td align="center">通过元素name定位</td>
+</tr>
+<tr>
+<td align="left">find_element_by_xpath</td>
+<td align="right">find_elements_by_xpath</td>
+<td align="center">通过xpath表达式定位</td>
+</tr>
+<tr>
+<td align="left">find_element_by_link_text</td>
+<td align="right">find_elements_by_link_tex</td>
+<td align="center">通过完整超链接定位</td>
+</tr>
+<tr>
+<td align="left">find_element_by_partial_link_text</td>
+<td align="right">find_elements_by_partial_link_text</td>
+<td align="center">通过部分链接定位</td>
+</tr>
+<tr>
+<td align="left">find_element_by_tag_name</td>
+<td align="right">find_elements_by_tag_name</td>
+<td align="center">通过标签定位</td>
+</tr>
+<tr>
+<td align="left">find_element_by_class_name</td>
+<td align="right">find_elements_by_class_name</td>
+<td align="center">通过类名进行定位</td>
+</tr>
+<tr>
+<td align="left">find_elements_by_css_selector</td>
+<td align="right">find_elements_by_css_selector</td>
+<td align="center">通过css选择器进行定位</td>
+</tr>
+</tbody>
+</table><h4><a id="3_66"></a>3.实例演示</h4>
+<p>假如我们有一个Web页面，通过前端工具（如，Firebug）查看到一个元素的属性是这样的。</p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+  &lt;body link="#0000cc"&gt;
+    &lt;a id="result_logo" href="/" onmousedown="return c({'fm':'tab','tab':'logo'})"&gt;
+    &lt;form id="form" class="fm" name="f" action="/s"&gt;
+      &lt;span class="soutu-btn"&gt;&lt;/span&gt;
+        &lt;input id="kw" class="s_ipt" name="wd" value="" maxlength="255" autocomplete="off"&gt;
+</code></pre>
+<ul>
+<li>通过id定位:</li>
+</ul>
+<pre><code>dr.find_element_by_id("kw")
+</code></pre>
+<ul>
+<li>通过name定位:</li>
+</ul>
+<pre><code>dr.find_element_by_name("wd")
+</code></pre>
+<ul>
+<li>通过class name定位:</li>
+</ul>
+<pre><code>dr.find_element_by_class_name("s_ipt")
+</code></pre>
+<ul>
+<li>通过tag name定位:</li>
+</ul>
+<pre><code>dr.find_element_by_tag_name("input")
+</code></pre>
+<ul>
+<li>通过xpath定位，xpath定位有N种写法，这里列几个常用写法:</li>
+</ul>
+<pre><code>dr.find_element_by_xpath("//*[@id='kw']")
+dr.find_element_by_xpath("//*[@name='wd']")
+dr.find_element_by_xpath("//input[@class='s_ipt']")
+dr.find_element_by_xpath("/html/body/form/span/input")
+dr.find_element_by_xpath("//span[@class='soutu-btn']/input")
+dr.find_element_by_xpath("//form[@id='form']/span/input")
+dr.find_element_by_xpath("//input[@id='kw' and @name='wd']")
+</code></pre>
+<ul>
+<li>通过css定位，css定位有N种写法，这里列几个常用写法:</li>
+</ul>
+<pre><code>dr.find_element_by_css_selector("#kw")
+dr.find_element_by_css_selector("[name=wd]")
+dr.find_element_by_css_selector(".s_ipt")
+dr.find_element_by_css_selector("html &gt; body &gt; form &gt; span &gt; input")
+dr.find_element_by_css_selector("span.soutu-btn&gt; input#kw")
+dr.find_element_by_css_selector("form#form &gt; span &gt; input")
+</code></pre>
+<p>接下来，我们的页面上有一组文本链接。</p>
+<pre><code>&lt;a class="mnav" href="http://news.baidu.com" name="tj_trnews"&gt;新闻&lt;/a&gt;
+&lt;a class="mnav" href="http://www.hao123.com" name="tj_trhao123"&gt;hao123&lt;/a&gt;
+</code></pre>
+<ul>
+<li>通过link text定位:</li>
+</ul>
+<pre><code>dr.find_element_by_link_text("新闻")
+dr.find_element_by_link_text("hao123")
+</code></pre>
+<ul>
+<li>通过partial link text定位:</li>
+</ul>
+<pre><code>dr.find_element_by_partial_link_text("新")
+dr.find_element_by_partial_link_text("hao")
+dr.find_element_by_partial_link_text("123")
+</code></pre>
+<h4><a id="4Seleniumwebdriver_154"></a>4.Selenium库下webdriver模块常用方法的使用</h4>
+<h4><a id="1_156"></a>1.控制浏览器操作的一些方法</h4>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>set_window_size()</td>
+<td>设置浏览器的大小</td>
+</tr>
+<tr>
+<td>back()</td>
+<td>控制浏览器后退</td>
+</tr>
+<tr>
+<td>forward()</td>
+<td>控制浏览器前进</td>
+</tr>
+<tr>
+<td>refresh()</td>
+<td>刷新当前页面</td>
+</tr>
+<tr>
+<td>clear()</td>
+<td>清除文本</td>
+</tr>
+<tr>
+<td>send_keys (value)</td>
+<td>模拟按键输入</td>
+</tr>
+<tr>
+<td>click()</td>
+<td>单击元素</td>
+</tr>
+<tr>
+<td>submit()</td>
+<td>用于提交表单</td>
+</tr>
+<tr>
+<td>get_attribute(name)</td>
+<td>获取元素属性值</td>
+</tr>
+<tr>
+<td>is_displayed()</td>
+<td>设置该元素是否用户可见</td>
+</tr>
+<tr>
+<td>size</td>
+<td>返回元素的尺寸</td>
+</tr>
+<tr>
+<td>text</td>
+<td>获取元素的文本</td>
+</tr>
+</tbody>
+</table><p>实例演示</p>
+<pre><code>from selenium import webdriver
+
+from time import sleep
+#1.创建Chrome浏览器对象，这会在电脑上在打开一个浏览器窗口
+browser = webdriver.Firefox(executable_path ="F:\GeckoDriver\geckodriver")
+
+#2.通过浏览器向服务器发送URL请求
+browser.get("https://www.baidu.com/")
+
+sleep(3)
+
+#3.刷新浏览器
+browser.refresh()
+
+#4.设置浏览器的大小
+browser.set_window_size(1400,800)
+
+#5.设置链接内容
+element=browser.find_element_by_link_text("新闻")
+element.click()
+
+element=browser.find_element_by_link_text("习近平的“下团组”时间")
+element.click()
+</code></pre>
+<h4><a id="2_201"></a>2.鼠标事件</h4>
+<p>在 WebDriver 中， 将这些关于鼠标操作的方法封装在 ActionChains 类提供。</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ActionChains(driver)</td>
+<td>构造ActionChains对象</td>
+</tr>
+<tr>
+<td>context_click()</td>
+<td>执行鼠标悬停操作</td>
+</tr>
+<tr>
+<td>move_to_element(above)</td>
+<td>右击</td>
+</tr>
+<tr>
+<td>double_click()</td>
+<td>双击</td>
+</tr>
+<tr>
+<td>drag_and_drop()</td>
+<td>拖动</td>
+</tr>
+<tr>
+<td>move_to_element(above)</td>
+<td>执行鼠标悬停操作</td>
+</tr>
+<tr>
+<td>context_click()</td>
+<td>用于模拟鼠标右键操作， 在调用时需要指定元素定位</td>
+</tr>
+<tr>
+<td>perform()</td>
+<td>执行所有 ActionChains 中存储的行为，可以理解成是对整个操作的提交动作</td>
+</tr>
+</tbody>
+</table><p>实例演示</p>
+<p><img alt="这里写图片描述" src="https://img-blog.csdn.net/20180308120859311?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzM2Mjc5MzE4/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"/></p>
+<hr/>
+<pre><code>
+from selenium import webdriver
+#1.引入 ActionChains 类
+from selenium.webdriver.common.action_chains import ActionChains
+
+driver= webdriver.Chrome("F:\Chrome\ChromeDriver\chromedriver")
+
+driver.get("https://www.baidu.cn")
+
+#2.定位到要悬停的元素
+element= driver.find_element_by_link_text("设置")
+
+#3.对定位到的元素执行鼠标悬停操作
+ActionChains(driver).move_to_element(element).perform()
+
+</code></pre>
+<h4><a id="3_241"></a>3.键盘事件</h4>
+<p>Selenium中的Key模块为我们提供了模拟键盘按键的方法，那就是send_keys()方法。它不仅可以模拟键盘输入，也可以模拟键盘的操作。</p>
+<p>常用的键盘操作如下：</p>
+<table>
+<thead>
+<tr>
+<th>模拟键盘按键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>send_keys(Keys.BACK_SPACE)</td>
+<td>删除键（BackSpace）</td>
+</tr>
+<tr>
+<td>send_keys(Keys.SPACE)</td>
+<td>空格键(Space)</td>
+</tr>
+<tr>
+<td>send_keys(Keys.TAB)</td>
+<td>制表键(Tab)</td>
+</tr>
+<tr>
+<td>send_keys(Keys.ESCAPE)</td>
+<td>回退键（Esc）</td>
+</tr>
+<tr>
+<td>send_keys(Keys.ENTER)</td>
+<td>回车键（Enter）</td>
+</tr>
+</tbody>
+</table><p>组合键的使用</p>
+<table>
+<thead>
+<tr>
+<th>模拟键盘按键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>send_keys(Keys.CONTROL,‘a’)</td>
+<td>全选（Ctrl+A）</td>
+</tr>
+<tr>
+<td>send_keys(Keys.CONTROL,‘c’)</td>
+<td>复制（Ctrl+C）</td>
+</tr>
+<tr>
+<td>send_keys(Keys.CONTROL,‘x’)</td>
+<td>剪切（Ctrl+X）</td>
+</tr>
+<tr>
+<td>send_keys(Keys.CONTROL,‘v’)</td>
+<td>粘贴（Ctrl+V）</td>
+</tr>
+<tr>
+<td>send_keys(Keys.F1…Fn)</td>
+<td>键盘 F1…Fn</td>
+</tr>
+</tbody>
+</table><h4><a id="4_266"></a>4.获取断言信息</h4>
+<p>不管是在做功能测试还是自动化测试，最后一步需要拿实际结果与预期进行比较。这个比较的称之为断言。通过我们获取title 、URL和text等信息进行断言。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>用于获得当前页面的标题</td>
+</tr>
+<tr>
+<td>current_url</td>
+<td>用户获得当前页面的URL</td>
+</tr>
+<tr>
+<td>text</td>
+<td>获取搜索条目的文本信息</td>
+</tr>
+</tbody>
+</table><p>实例演示</p>
+<pre><code>from selenium import webdriver
+from time import sleep
+
+driver = webdriver.Firefox(executable_path ="F:\GeckoDriver\geckodriver")
+driver.get("https://www.baidu.com")
+
+print('Before search================')
+
+# 打印当前页面title
+title = driver.title
+print(title)
+
+# 打印当前页面URL
+now_url = driver.current_url
+print(now_url)
+
+driver.find_element_by_id("kw").send_keys("selenium")
+driver.find_element_by_id("su").click()
+sleep(1)
+
+print('After search================')
+
+# 再次打印当前页面title
+title = driver.title
+print(title)
+
+# 打印当前页面URL
+now_url = driver.current_url
+print(now_url)
+
+# 获取结果数目
+user = driver.find_element_by_class_name('nums').text
+print(user)
+
+#关闭所有窗口
+driver.quit()
+
+</code></pre>
+<p>打印输出结果</p>
+<pre><code>Before search================
+百度一下，你就知道
+https://www.baidu.com/
+After search================
+selenium_百度搜索
+https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=0&amp;rsv_idx=1&amp;tn=baidu&amp;wd=selenium&amp;rsv_pq=a1d51b980000e36e&amp;rsv_t=a715IZaMpLd1w92I4LNUi7gKuOdlAz5McsHe%2FSLQeBZD44OUIPnjY%2B7pODM&amp;rqlang=cn&amp;rsv_enter=0&amp;rsv_sug3=8&amp;inputT=758&amp;rsv_sug4=759
+搜索工具
+百度为您找到相关结果约7,170,000个
+</code></pre>
+<h4><a id="5a_hrefhttpwwwtestclassnetselenium_pythonelementwaita_329"></a>5.设置元素等待:<a href="http://www.testclass.net/selenium_python/element-wait/" rel="nofollow">参考文献</a><a></a></h4>
+<h4><a id="6_331"></a>6.定位一组元素</h4>
+<p>定位一组元素的方法与定位单个元素的方法类似，唯一的区别是在单词element后面多了一个s表示复数。</p>
+<p>实例演示</p>
+<pre><code>from selenium import webdriver
+from time import sleep
+
+driver =webdriver.Firefox(executable_path ="F:\GeckoDriver\geckodriver")
+driver.get("https://www.baidu.com")
+
+driver.find_element_by_id("kw").send_keys("selenium")
+driver.find_element_by_id("su").click()
+sleep(1)
+
+#1.定位一组元素
+elements = driver.find_elements_by_xpath('//div/h3/a')
+print(type(elements))
+
+#2.循环遍历出每一条搜索结果的标题
+for t in elements:
+    print(t.text)
+    element=driver.find_element_by_link_text(t.text)
+    element.click()
+    sleep(3)
+
+driver.quit()
+</code></pre>
+<h4><a id="7_361"></a>7.多表单切换</h4>
+<p>在Web应用中经常会遇到frame/iframe表单嵌套页面的应用，WebDriver只能在一个页面上对元素识别与定位，对于frame/iframe表单内嵌页面上的元素无法直接定位。这时就需要通过switch_to.frame()方法将当前定位的主体切换为frame/iframe表单的内嵌页面中。</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>switch_to.frame()</td>
+<td>将当前定位的主体切换为frame/iframe表单的内嵌页面中</td>
+</tr>
+<tr>
+<td>switch_to.default_content()</td>
+<td>跳回最外层的页面</td>
+</tr>
+</tbody>
+</table><pre><code>&lt;html&gt;
+  &lt;body&gt;
+    ...
+    &lt;iframe id="x-URS-iframe" ...&gt;
+      &lt;html&gt;
+         &lt;body&gt;
+           ...
+           &lt;input name="email" &gt;
+</code></pre>
+<p>126邮箱登录框的结构大概是这样子的，想要操作登录框必须要先切换到iframe表单。</p>
+<pre><code>from selenium import webdriver
+
+driver = webdriver.Chrome()
+driver.get("http://www.126.com")
+
+driver.switch_to.frame('x-URS-iframe')
+driver.find_element_by_name("email").clear()
+driver.find_element_by_name("email").send_keys("username")
+driver.find_element_by_name("password").clear()
+driver.find_element_by_name("password").send_keys("password")
+driver.find_element_by_id("dologin").click()
+driver.switch_to.default_content()
+
+driver.quit()
+</code></pre>
+<p>switch_to.frame() 默认可以直接取表单的id 或name属性。如果iframe没有可用的id和name属性，则可以通过下面的方式进行定位。</p>
+<pre><code>……
+#先通过xpth定位到iframe
+xf = driver.find_element_by_xpath('//*[@id="x-URS-iframe"]')
+
+#再将定位对象传给switch_to.frame()方法
+driver.switch_to.frame(xf)
+……
+driver.switch_to.parent_frame()
+</code></pre>
+<h4><a id="8_410"></a>8.多窗口切换</h4>
+<p>在页面操作过程中有时候点击某个链接会弹出新的窗口，这时就需要主机切换到新打开的窗口上进行操作。WebDriver提供了switch_to.window()方法，可以实现在不同的窗口之间切换。</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>current_window_handle</td>
+<td>获得当前窗口句柄</td>
+</tr>
+<tr>
+<td>window_handles</td>
+<td>返回所有窗口的句柄到当前会话</td>
+</tr>
+<tr>
+<td>switch_to.window()</td>
+<td>用于切换到相应的窗口，与上一节的switch_to.frame()类似，前者用于不同窗口的切换，后者用于不同表单之间的切换。</td>
+</tr>
+</tbody>
+</table><p>实例演示</p>
+<pre><code>from selenium import webdriver
+import time
+driver = webdriver.Chrome("F:\Chrome\ChromeDriver\chromedriver")
+driver.implicitly_wait(10)
+driver.get("http://www.baidu.com")
+
+#1.获得百度搜索窗口句柄
+sreach_windows = driver.current_window_handle
+
+driver.find_element_by_link_text('登录').click()
+driver.find_element_by_link_text("立即注册").click()
+
+#1.获得当前所有打开的窗口的句柄
+all_handles = driver.window_handles
+
+#3.进入注册窗口
+for handle in all_handles:
+    if handle != sreach_windows:
+        driver.switch_to.window(handle)
+        print('跳转到注册窗口')
+        driver.find_element_by_name("account").send_keys('123456789')
+        driver.find_element_by_name('password').send_keys('123456789')
+        time.sleep(2)
+    
+driver.quit()
+</code></pre>
+<h4><a id="9_449"></a>9.警告框处理</h4>
+<p>在WebDriver中处理JavaScript所生成的alert、confirm以及prompt十分简单，具体做法是使用 switch_to.alert 方法定位到 alert/confirm/prompt，然后使用text/accept/dismiss/ send_keys等方法进行操作。</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>返回 alert/confirm/prompt 中的文字信息</td>
+</tr>
+<tr>
+<td>accept()</td>
+<td>接受现有警告框</td>
+</tr>
+<tr>
+<td>dismiss()</td>
+<td>解散现有警告框</td>
+</tr>
+<tr>
+<td>send_keys(keysToSend)</td>
+<td>发送文本至警告框。keysToSend：将文本发送至警告框。</td>
+</tr>
+</tbody>
+</table><p>实例演示</p>
+<pre><code>
+
+from selenium import webdriver
+from selenium.webdriver.common.action_chains import ActionChains
+import time
+
+driver = webdriver.Chrome("F:\Chrome\ChromeDriver\chromedriver")
+driver.implicitly_wait(10)
+driver.get('http://www.baidu.com')
+
+# 鼠标悬停至“设置”链接
+link = driver.find_element_by_link_text('设置')
+ActionChains(driver).move_to_element(link).perform()
+
+# 打开搜索设置
+driver.find_element_by_link_text("搜索设置").click()
+
+#在此处设置等待2s否则可能报错
+time.sleep(2)
+# 保存设置
+driver.find_element_by_class_name("prefpanelgo").click()
+time.sleep(2)
+
+# 接受警告框
+driver.switch_to.alert.accept()
+
+driver.quit()
+</code></pre>
+<h4><a id="10_490"></a>10.下拉框选择操作</h4>
+<p>导入选择下拉框Select类，使用该类处理下拉框操作。</p>
+<pre><code>from selenium.webdriver.support.select import Select
+</code></pre>
+<p>Select类的方法</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>select_by_value(“选择值”)</td>
+<td>相当于我们使用鼠标选择下拉框的值</td>
+</tr>
+</tbody>
+</table><p>有时我们会碰到下拉框，WebDriver提供了Select类来处理下拉框。 如百度搜索设置的下拉框，如下图：<br/>
+<img alt="这里写图片描述" src="http://orru5lls3.bkt.clouddn.com/select.png"/></p>
+<pre><code>from selenium import webdriver
+from selenium.webdriver.support.select import Select
+from time import sleep
+
+driver = webdriver.Chrome("F:\Chrome\ChromeDriver\chromedriver")
+driver.implicitly_wait(10)
+driver.get('http://www.baidu.com')
+
+#1.鼠标悬停至“设置”链接
+driver.find_element_by_link_text('设置').click()
+sleep(1)
+#2.打开搜索设置
+driver.find_element_by_link_text("搜索设置").click()
+sleep(2)
+
+#3.搜索结果显示条数
+sel = driver.find_element_by_xpath("//select[@id='nr']")
+Select(sel).select_by_value('50')  # 显示50条
+
+sleep(3)
+driver.quit()
+</code></pre>
+<h4><a id="11_530"></a>11.文件上传</h4>
+<p>对于通过input标签实现的上传功能，可以将其看作是一个输入框，即通过send_keys()指定本地文件路径的方式实现文件上传。</p>
+<p>通过send_keys()方法来实现文件上传:</p>
+<pre><code>from selenium import webdriver
+import os
+
+driver = webdriver.Firefox()
+file_path = 'file:///' + os.path.abspath('upfile.html')
+driver.get(file_path)
+
+# 定位上传按钮，添加本地文件
+driver.find_element_by_name("file").send_keys('D:\\upload_file.txt')
+
+driver.quit()
+</code></pre>
+<h4><a id="12cookie_548"></a>12.cookie操作</h4>
+<p>有时候我们需要验证浏览器中cookie是否正确，因为基于真实cookie的测试是无法通过白盒和集成测试进行的。WebDriver提供了操作Cookie的相关方法，可以读取、添加和删除cookie信息。</p>
+<p>WebDriver操作cookie的方法:</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_cookies()</td>
+<td>获得所有cookie信息</td>
+</tr>
+<tr>
+<td>get_cookie(name)</td>
+<td>返回字典的key为“name”的cookie信息</td>
+</tr>
+<tr>
+<td>add_cookie(cookie_dict)</td>
+<td>添加cookie。“cookie_dict”指字典对象，必须有name 和value 值</td>
+</tr>
+<tr>
+<td>delete_cookie(name,optionsString)</td>
+<td>删除cookie信息。“name”是要删除的cookie的名称，“optionsString”是该cookie的选项，目前支持的选项包括“路径”，“域”</td>
+</tr>
+<tr>
+<td>delete_all_cookies()</td>
+<td>删除所有cookie信息</td>
+</tr>
+</tbody>
+</table><p>实例演示</p>
+<pre><code>
+from selenium import webdriver
+import time
+browser = webdriver.Chrome("F:\Chrome\ChromeDriver\chromedriver")
+browser.get("http://www.youdao.com")
+
+#1.打印cookie信息
+print('=====================================')
+print("打印cookie信息为：")
+print(browser.get_cookies)
+
+#2.添加cookie信息
+dict={'name':"name",'value':'Kaina'}
+browser.add_cookie(dict)
+
+print('=====================================')
+print('添加cookie信息为：')
+#3.遍历打印cookie信息
+for cookie in browser.get_cookies():
+    print('%s----%s\n' %(cookie['name'],cookie['value']))
+    
+#4.删除一个cookie
+browser.delete_cookie('name')
+print('=====================================')
+print('删除一个cookie')
+for cookie in browser.get_cookies():
+    print('%s----%s\n' %(cookie['name'],cookie['value']))
+
+print('=====================================')
+print('删除所有cookie后：')
+#5.删除所有cookie,无需传递参数
+browser.delete_all_cookies()
+for cookie in browser.get_cookies():
+    print('%s----%s\n' %(cookie['name'],cookie['value']))
+
+time.sleep(3)
+browser.close()
+</code></pre>
+<h4><a id="13JavaScript_601"></a>13.调用JavaScript代码</h4>
+<p>虽然WebDriver提供了操作浏览器的前进和后退方法，但对于浏览器滚动条并没有提供相应的操作方法。在这种情况下，就可以借助JavaScript来控制浏览器的滚动条。WebDriver提供了execute_script()方法来执行JavaScript代码。</p>
+<p>用于调整浏览器滚动条位置的JavaScript代码如下：</p>
+<pre><code>&lt;!-- window.scrollTo(左边距,上边距); --&gt;
+window.scrollTo(0,450);
+</code></pre>
+<p>window.scrollTo()方法用于设置浏览器窗口滚动条的水平和垂直位置。方法的第一个参数表示水平的左间距，第二个参数表示垂直的上边距。其代码如下：</p>
+<pre><code>from selenium import webdriver
+from time import sleep
+
+#1.访问百度
+driver=webdriver.Firefox(executable_path ="F:\GeckoDriver\geckodriver")
+driver.get("http://www.baidu.com")
+
+#2.搜索
+driver.find_element_by_id("kw").send_keys("selenium")
+driver.find_element_by_id("su").click()
+
+#3.休眠2s目的是获得服务器的响应内容，如果不使用休眠可能报错
+sleep(2)
+
+#4.通过javascript设置浏览器窗口的滚动条位置
+js="window.scrollTo(100,450);"
+driver.execute_script(js)
+sleep(3)
+
+driver.close()
+</code></pre>
+<p>通过浏览器打开百度进行搜索，并且提前通过set_window_size()方法将浏览器窗口设置为固定宽高显示，目的是让窗口出现水平和垂直滚动条。然后通过execute_script()方法执行JavaScripts代码来移动滚动条的位置。</p>
+<h4><a id="14_638"></a>14.窗口截图</h4>
+<p>自动化用例是由程序去执行的，因此有时候打印的错误信息并不十分明确。如果在脚本执行出错的时候能对当前窗口截图保存，那么通过图片就可以非常直观地看出出错的原因。WebDriver提供了截图函数get_screenshot_as_file()来截取当前窗口。</p>
+<p>截屏方法：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_screenshot_as_file(self, filename)</td>
+<td>用于截取当前窗口，并把图片保存到本地</td>
+</tr>
+</tbody>
+</table><pre><code>from selenium import webdriver
+from time import sleep
+
+driver =webdriver.Firefox(executable_path ="F:\GeckoDriver\geckodriver")
+driver.get('http://www.baidu.com')
+
+driver.find_element_by_id('kw').send_keys('selenium')
+driver.find_element_by_id('su').click()
+sleep(2)
+
+#1.截取当前窗口，并指定截图图片的保存位置
+driver.get_screenshot_as_file("D:\\baidu_img.jpg")
+
+driver.quit()
+</code></pre>
+<h4><a id="15_664"></a>15.关闭浏览器</h4>
+<p>在前面的例子中我们一直使用quit()方法，其含义为退出相关的驱动程序和关闭所有窗口。除此之外，WebDriver还提供了close()方法，用来关闭当前窗口。例多窗口的处理，在用例执行的过程中打开了多个窗口，我们想要关闭其中的某个窗口，这时就要用到close()方法进行关闭了。</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>close()</td>
+<td>关闭单个窗口</td>
+</tr>
+<tr>
+<td>quit()</td>
+<td>关闭所有窗口</td>
+</tr>
+</tbody>
+</table>
+</div>
+            </body></html>
