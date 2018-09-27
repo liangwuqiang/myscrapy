@@ -1,0 +1,388 @@
+1538019433964	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.WokArMuPo15k"
+*** You are running in headless mode.
+1538019436270	Marionette	INFO	Listening on port 35881
+1538019436373	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538019436437	Marionette	DEBUG	[2147483649] Frame script loaded
+1538019436439	Marionette	DEBUG	[2147483649] Frame script registered
+1538019436461	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538019438657	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538019441629	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538019449936	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist
+1538019450104	Marionette	DEBUG	[2147483649] Received DOM event popstate for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=35
+1538019450624	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483658
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538019740932	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0fbebVQeSknq"
+*** You are running in headless mode.
+1538019742981	Marionette	INFO	Listening on port 37085
+1538019743055	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538019743127	Marionette	DEBUG	[2147483649] Frame script loaded
+1538019743131	Marionette	DEBUG	[2147483649] Frame script registered
+1538019743158	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538019745771	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538019750425	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist
+1538019757432	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist
+1538019757563	Marionette	DEBUG	[2147483649] Received DOM event popstate for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=35
+1538019758049	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483657
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538020043723	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.a967lSOlrru5"
+*** You are running in headless mode.
+1538020045779	Marionette	INFO	Listening on port 37695
+1538020045858	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538020045951	Marionette	DEBUG	[2147483649] Frame script loaded
+1538020045953	Marionette	DEBUG	[2147483649] Frame script registered
+1538020106857	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538020108459	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538020111238	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist
+1538020114955	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 11966, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1538020354982	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Pck0VXL7I5ZW"
+*** You are running in headless mode.
+1538020357125	Marionette	INFO	Listening on port 46645
+1538020357196	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538020357287	Marionette	DEBUG	[2147483649] Frame script loaded
+1538020357296	Marionette	DEBUG	[2147483649] Frame script registered
+1538020357323	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538020358029	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538020360322	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538020365195	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist
+1538020576416	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0h7XxKAsLetS"
+*** You are running in headless mode.
+1538020578421	Marionette	INFO	Listening on port 38019
+1538020578530	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538020578619	Marionette	DEBUG	[2147483649] Frame script loaded
+1538020578622	Marionette	DEBUG	[2147483649] Frame script registered
+1538020578657	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538020579416	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538020581896	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538020586876	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist
+1538020792795	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.iUdbCG3K2tqV"
+*** You are running in headless mode.
+1538020794961	Marionette	INFO	Listening on port 38915
+1538020795046	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538020795115	Marionette	DEBUG	[2147483649] Frame script loaded
+1538020795128	Marionette	DEBUG	[2147483649] Frame script registered
+1538020795160	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538020795991	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538020799566	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538020804404	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist
+1538028527790	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kz9Zyl9N86sx"
+*** You are running in headless mode.
+1538028529842	Marionette	INFO	Listening on port 46437
+1538028529907	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538028529979	Marionette	DEBUG	[2147483649] Frame script loaded
+1538028529997	Marionette	DEBUG	[2147483649] Frame script registered
+1538028530035	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538028530494	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028532819	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028537588	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist
+1538028537711	Marionette	DEBUG	[2147483649] Received DOM event popstate for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=35
+1538028538080	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483658
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028770385	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.R5357Z3sOi01"
+*** You are running in headless mode.
+1538028772407	Marionette	INFO	Listening on port 42189
+1538028772507	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538028772572	Marionette	DEBUG	[2147483649] Frame script loaded
+1538028772585	Marionette	DEBUG	[2147483649] Frame script registered
+1538028772612	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538028775646	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028782363	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=35
+1538028786648	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=35
+1538028786816	Marionette	DEBUG	[2147483649] Received DOM event popstate for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=70
+1538028787150	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483655
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028889480	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.NaoHpXUkM1lZ"
+*** You are running in headless mode.
+1538028891629	Marionette	INFO	Listening on port 38797
+1538028891690	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538028891758	Marionette	DEBUG	[2147483649] Frame script loaded
+1538028891768	Marionette	DEBUG	[2147483649] Frame script registered
+1538028891801	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538028894144	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028902295	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=35
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028907133	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=35
+1538028907301	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.5VRPruU6REJF"
+*** You are running in headless mode.
+1538028909410	Marionette	INFO	Listening on port 35103
+1538028909520	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538028909592	Marionette	DEBUG	[2147483649] Frame script loaded
+1538028909604	Marionette	DEBUG	[2147483649] Frame script registered
+1538028909623	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538028910037	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028912867	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=70
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028918524	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=70
+1538028918659	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.17tiZ0LYNQO1"
+*** You are running in headless mode.
+1538028920739	Marionette	INFO	Listening on port 35235
+1538028920781	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538028920872	Marionette	DEBUG	[2147483649] Frame script loaded
+1538028920904	Marionette	DEBUG	[2147483649] Frame script registered
+1538028920934	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538028921680	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028925673	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=105
+1538028931714	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=105
+1538028932881	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.V3XU6lCPQIRC"
+*** You are running in headless mode.
+1538028935022	Marionette	INFO	Listening on port 39143
+1538028935100	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538028935197	Marionette	DEBUG	[2147483649] Frame script loaded
+1538028935198	Marionette	DEBUG	[2147483649] Frame script registered
+1538028935221	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538028935737	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028940570	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=140
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028944745	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=140
+1538028945906	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.VHVWUvcxjVgk"
+*** You are running in headless mode.
+1538028948039	Marionette	INFO	Listening on port 37929
+1538028948130	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538028948202	Marionette	DEBUG	[2147483649] Frame script loaded
+1538028948203	Marionette	DEBUG	[2147483649] Frame script registered
+1538028948232	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538028949180	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028952464	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=175
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028956590	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=175
+1538028957765	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Ze8BPdxpy8Wn"
+*** You are running in headless mode.
+1538028959833	Marionette	INFO	Listening on port 42459
+1538028959884	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538028959959	Marionette	DEBUG	[2147483649] Frame script loaded
+1538028959961	Marionette	DEBUG	[2147483649] Frame script registered
+1538028960017	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538028960770	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028965642	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=210
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028972184	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=210
+1538028972362	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.e4GcDvvAapOI"
+*** You are running in headless mode.
+1538028974540	Marionette	INFO	Listening on port 41053
+1538028974589	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538028974666	Marionette	DEBUG	[2147483649] Frame script loaded
+1538028974669	Marionette	DEBUG	[2147483649] Frame script registered
+1538028974695	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538028977855	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538028990440	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=245
+1538028997623	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=245
+1538028998740	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.M2a1FlrxJhDp"
+*** You are running in headless mode.
+1538029000858	Marionette	INFO	Listening on port 46575
+1538029000958	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538029001022	Marionette	DEBUG	[2147483649] Frame script loaded
+1538029001023	Marionette	DEBUG	[2147483649] Frame script registered
+1538029001060	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538029003523	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 15162, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 15090, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 15519, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 15615, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 14908, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 15987, Chrome_ChildThread] WARNING: pipe error (21): 连接被对方重设: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 15876, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 15800, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1538031507673	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HGRyRUxlrsLL"
+*** You are running in headless mode.
+1538031510096	Marionette	INFO	Listening on port 39357
+1538031510184	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031510254	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031510260	Marionette	DEBUG	[2147483649] Frame script registered
+1538031510283	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031510746	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031514945	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031519143	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist
+1538031519266	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qrPIfBOzrq7I"
+*** You are running in headless mode.
+1538031521436	Marionette	INFO	Listening on port 40357
+1538031521503	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031521594	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031521596	Marionette	DEBUG	[2147483649] Frame script registered
+1538031521622	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031522150	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031525141	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=35
+1538031528461	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=35
+1538031529648	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.E4Js80BI6QJ7"
+*** You are running in headless mode.
+1538031531755	Marionette	INFO	Listening on port 42975
+1538031531860	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031531952	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031531953	Marionette	DEBUG	[2147483649] Frame script registered
+1538031531972	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031532788	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031539037	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=70
+1538031542866	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=70
+1538031543046	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.niUSg3F2Hgg0"
+*** You are running in headless mode.
+1538031545248	Marionette	INFO	Listening on port 43239
+1538031545291	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031545363	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031545364	Marionette	DEBUG	[2147483649] Frame script registered
+1538031545387	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031545814	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031548473	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=105
+1538031553751	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=105
+1538031553919	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.t3Un1WdBIdsF"
+*** You are running in headless mode.
+1538031555984	Marionette	INFO	Listening on port 38547
+1538031556087	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031556164	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031556166	Marionette	DEBUG	[2147483649] Frame script registered
+1538031556191	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031556689	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031560073	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=140
+1538031566187	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=140
+1538031566367	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.NCuDvJpOTptd"
+*** You are running in headless mode.
+1538031568536	Marionette	INFO	Listening on port 35137
+1538031568596	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031568670	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031568678	Marionette	DEBUG	[2147483649] Frame script registered
+1538031568704	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031569324	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031572598	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=175
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031576512	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=175
+1538031576682	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.exiEH1XYnB89"
+*** You are running in headless mode.
+1538031578921	Marionette	INFO	Listening on port 37307
+1538031578997	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031579068	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031579071	Marionette	DEBUG	[2147483649] Frame script registered
+1538031579094	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031580067	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031582423	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=210
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031588589	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=210
+1538031588716	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ZysUy4cPQ9ya"
+*** You are running in headless mode.
+1538031590936	Marionette	INFO	Listening on port 45365
+1538031591028	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031591098	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031591109	Marionette	DEBUG	[2147483649] Frame script registered
+1538031591148	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031591819	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031594786	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=245
+1538031599027	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=245
+1538031599199	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8XtvLXDWDBgS"
+*** You are running in headless mode.
+1538031601394	Marionette	INFO	Listening on port 39407
+1538031601430	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031601499	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031601507	Marionette	DEBUG	[2147483649] Frame script registered
+1538031601547	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031602121	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031604536	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=280
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031608804	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=280
+1538031609927	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.47dlemEhdU95"
+*** You are running in headless mode.
+1538031612133	Marionette	INFO	Listening on port 37841
+1538031612175	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031612240	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031612261	Marionette	DEBUG	[2147483649] Frame script registered
+1538031612310	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031612755	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031615627	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=315
+1538031619598	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=315
+1538031619760	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HOokdNLhKrMd"
+*** You are running in headless mode.
+1538031622156	Marionette	INFO	Listening on port 41445
+1538031622178	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031622250	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031622256	Marionette	DEBUG	[2147483649] Frame script registered
+1538031622294	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031624644	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031629059	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=350
+1538031632877	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=350
+1538031634045	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.IT93zIJ65WFu"
+*** You are running in headless mode.
+1538031636624	Marionette	INFO	Listening on port 42815
+1538031636666	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031636751	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031636762	Marionette	DEBUG	[2147483649] Frame script registered
+1538031636787	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031637910	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031642780	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=385
+1538031648167	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=385
+1538031649356	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xb3Ae3Hshu8d"
+*** You are running in headless mode.
+1538031652563	Marionette	INFO	Listening on port 36339
+1538031652630	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031652705	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031652707	Marionette	DEBUG	[2147483649] Frame script registered
+1538031652746	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031654868	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031658042	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=420
+JavaScript warning: https://s3.music.126.net/web/s/core_d367dd66c6cb86b1d02624f2ee472829.js?d367dd66c6cb86b1d02624f2ee472829, line 94: unreachable code after return statement
+1538031661457	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://music.163.com/#/discover/playlist/?order=hot&cat=%E5%85%A8%E9%83%A8&limit=35&offset=420
+1538031662593	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.za1uEv9sHm7n"
+*** You are running in headless mode.
+1538031665990	Marionette	INFO	Listening on port 43141
+1538031666037	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538031666107	Marionette	DEBUG	[2147483649] Frame script loaded
+1538031666108	Marionette	DEBUG	[2147483649] Frame script registered
+1538031666137	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1538031668807	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 18572, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 18503, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 17855, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 17786, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-LCnNpq/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
