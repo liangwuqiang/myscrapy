@@ -1,0 +1,20 @@
+检测返回字节码的网页 属于什么编码
+
+Mozilla Firefox包含有一个自动检测字符编码的库，已经移植到Python中，叫做chardet。
+
+chardet使用
+
+安装：
+pip install chardet
+
+使用：
+
+>>> import urllib
+ 
+>>> rawdata = urllib.urlopen('http://www.jd.com/').read()
+ 
+>>> import chardet
+ 
+>>> chardet.detect(rawdata)
+ 
+{'confidence': 0.98999999999999999, 'language': '', 'encoding': 'utf-8'}

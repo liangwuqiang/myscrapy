@@ -2,9 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0a2b851-dbc5-408c-b71f-f009f2638c45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/playlist.csv" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_crawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/selenium用法详解.files/selenium用法详解1612.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/selenium用法详解.files/selenium用法详解1837.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/selenium用法详解.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/selenium用法详解_files/d4938a4cd65e5771b45532b2ac77fd6d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/selenium用法详解_files/f22bb3f537b11604c607c387da1965c1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单1015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单1577.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单1854.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单2006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单2280.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单2410.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单2566.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单2718.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单281.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单3794.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单4167.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单4717.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单5093.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单5332.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单545.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.files/手把手教你写网络爬虫（1）：网易云音乐歌单5509.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/07492f34c98873bbede3c415c3206a41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/09ba9722e1cefc7f03461ef12f190d79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/115f388fda6989764b3270696b511989.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/1f032d800f5416060ab4af13d8dd0317.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/35fd3119eaf8a2319203dad5354658ad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/3cc413c0113c8c602c0280f08750d34b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/41c36edd51d86778063c3bf9fe6d26ad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/4cd0ae4012a51c3d6bf540ee2077dcd4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/717715aff3fe0dafa90868bf58379e63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/7312a18725007f929aa8a978e10c7ff5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/88d30e0bbe0a23244db291967ef5411d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/8d72284c36158c41636bf5f8378cc488.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/975a4fac2017c4bbf1e122bf76b767ef.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/b88e33a2b7559f89c7d7f872e94a46ae.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/ec0c5234c28b881851be02be238a2a04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫（1）：网易云音乐歌单_files/f21070a6c5768dbc1785792b12807813.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wang_yi_yun.py" beforeDir="false" afterPath="$PROJECT_DIR$/wang_yi_yun.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +67,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="2" />
+          <entry key="csv" value="3" />
           <entry key="html" value="4" />
           <entry key="log" value="1" />
           <entry key="py" value="20" />
@@ -40,18 +77,18 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="4" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PLAIN_TEXT" value="5" />
           <entry key="Python" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2126" />
+          <entry key="py" value="2198" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2126" />
+          <entry key="Python" value="2198" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -59,44 +96,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wang_yi_yun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="38">
+              <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
               <folding>
                 <element signature="e#25#55#0" expanded="true" />
-                <marker date="1538031507405" expanded="true" signature="165:1524" ph="..." />
-                <marker date="1538031507405" expanded="true" signature="1521:1522" ph="..." />
-                <marker date="1538031507405" expanded="true" signature="1595:1667" ph="..." />
+                <marker date="1538036942965" expanded="true" signature="193:1552" ph="..." />
+                <marker date="1538036942965" expanded="true" signature="1549:1550" ph="..." />
+                <marker date="1538036942965" expanded="true" signature="1623:1695" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="1067" selection-start-line="1067" selection-end-line="1067" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-342">
-              <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+            <state relative-caret-position="133">
+              <caret line="154" column="29" lean-forward="true" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="29" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -128,8 +147,8 @@
         <option value="$PROJECT_DIR$/example/items.py" />
         <option value="$PROJECT_DIR$/example/settings.py" />
         <option value="$PROJECT_DIR$/example/spiders/tm_goods.py" />
-        <option value="$PROJECT_DIR$/my_crawler.py" />
         <option value="$PROJECT_DIR$/wang_yi_yun.py" />
+        <option value="$PROJECT_DIR$/my_crawler.py" />
       </list>
     </option>
   </component>
@@ -191,7 +210,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.wang_yi_yun">
+  <component name="RunManager" selected="Python.MyCrawler">
     <configuration name="MyCrawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="example" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -262,8 +281,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.wang_yi_yun" />
         <item itemvalue="Python.MyCrawler" />
+        <item itemvalue="Python.wang_yi_yun" />
       </list>
     </recent_temporary>
   </component>
@@ -282,13 +301,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="694" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13818721" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13818721" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19264448" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2977233" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.12259194" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,16 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -397,36 +407,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/playlist.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="71" lean-forward="true" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="738">
           <caret line="1067" selection-start-line="1067" selection-end-line="1067" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
+        <state relative-caret-position="239">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playlist.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wang_yi_yun.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="38">
+          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
           <folding>
             <element signature="e#25#55#0" expanded="true" />
-            <marker date="1538031507405" expanded="true" signature="165:1524" ph="..." />
-            <marker date="1538031507405" expanded="true" signature="1521:1522" ph="..." />
-            <marker date="1538031507405" expanded="true" signature="1595:1667" ph="..." />
+            <marker date="1538036942965" expanded="true" signature="193:1552" ph="..." />
+            <marker date="1538036942965" expanded="true" signature="1549:1550" ph="..." />
+            <marker date="1538036942965" expanded="true" signature="1623:1695" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="154" column="29" lean-forward="true" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

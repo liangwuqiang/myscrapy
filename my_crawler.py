@@ -1,3 +1,6 @@
+"""
+这是一个抓取单一网页的例子，包含了网页中的图片
+"""
 import hashlib
 from urllib import request
 from bs4 import BeautifulSoup  # pip install beautifulsoup4
@@ -132,7 +135,7 @@ class MyCrawler(object):
             self.get_images()
             self.format_html()
             self.save_file()
-            break
+            # break
 
 
 def main():
@@ -145,7 +148,8 @@ def main():
     # 简书
     urls = """
     
-https://blog.csdn.net/qq_29186489/article/details/78661008
+http://python.jobbole.com/88350/
+
 
         """
     crawler = MyCrawler(urls)

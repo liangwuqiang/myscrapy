@@ -1,3 +1,6 @@
+"""
+这是一个在动态网页下抓取数据的一个例子
+"""
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import csv
