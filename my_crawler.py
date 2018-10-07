@@ -148,7 +148,7 @@ def main():
     # 简书
     urls = """
     
-http://python.jobbole.com/88350/
+https://blog.csdn.net/HeatDeath/article/details/78030902
 
 
         """
