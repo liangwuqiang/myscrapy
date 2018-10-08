@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+        <html><head><meta charset="UTF-8">
+        </head><body>
+        <p><center><h1>python正则表达式之r</h1></center></p>
+            <div class="cont">
+<h1>python正则表达式之r</h1>
+<p><p><br/></p><hr/><p>r表示我的这个正则表达式里面的字符串，在Python里面不再进行转义处理了。</p><p><br/></p><p>举例：</p><p><br/></p><p># -*- coding: utf-8 -*-</p><p>import re</p><p><br/></p><p>def re_pattern_syntax():</p><p>   # 转义字符 \ 用来匹配特殊字符</p><p>   print(re.search(r'\\', 'The\\ price is $9.00').groups())   //匹配\</p><p>   </p><p>if __name__ == '__main__':</p><p>re_pattern_syntax()</p><p><br/></p><p>运行结果</p><p><br/></p><p><img alt="grammar27.png" src="images/4318e7997bd16a98f5115988661fb162.png" title="YefSkMYaJcIriHY6yw.png"/></p><p><br/></p><p>假如把 r去掉呢？</p><p><br/></p><p># -*- coding: utf-8 -*-</p><p>import re</p><p><br/></p><p>def re_pattern_syntax():</p><p>   # 转义字符 \ 用来匹配特殊字符</p><p>   print(re.search('\\', 'The\\ price is $9.00').groups())   //匹配\</p><p>   </p><p>if __name__ == '__main__':</p><p>re_pattern_syntax()</p><p><br/></p><p>运行结果，会报错。</p><p><br/></p><p><img alt="grammar28.png" src="images/29a0f0431903ff60f548cf801728cde0.png" title="R5UIxRtihgM3r4jhnc.png"/></p><p><br/></p><p>假如把 r去掉，要去匹配\呢？</p><p><br/></p><p># -*- coding: utf-8 -*-</p><p>import re</p><p><br/></p><p>def re_pattern_syntax():</p><p>   # 转义字符 \ 用来匹配特殊字符</p><p>   print(re.search('\\\\', 'The\\ price is $9.00').groups())   //匹配\</p><p>   </p><p>if __name__ == '__main__':</p><p>re_pattern_syntax()</p><p><br/></p><p>运行结果，为什么要写4个呢？因为前2个会被Python给处理掉，后面2个\\又被处理成一个\，所以最后真正处理完只有2个\，所以必须写4个\，才能匹配出1个\，这样可读性是比较差的，所以这也是我们为什么要在正则表达式里面加个r，是为了避免这个Python语言去处理这个\。</p><p><br/></p><p><img alt="grammar29.png" src="images/25d385436243b3e993c295f96b1d9bc9.png" title="0A939y5exqdW3pSty2.png"/></p><p><br/></p><p><br/></p><p><br/></p><p><span style="color: rgb(192, 0, 0);">【本文由麦子学院独家原创，转载请注明出处并保留原文链接】</span></p><p><br/></p><p>
+</p></p></div>
+        </body></html>

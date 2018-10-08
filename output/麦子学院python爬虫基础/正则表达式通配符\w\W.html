@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+        <html><head><meta charset="UTF-8">
+        </head><body>
+        <p><center><h1>正则表达式通配符\w\W</h1></center></p>
+            <div class="cont">
+<h1>正则表达式通配符\w\W</h1>
+<p><p><br/></p><hr/><h3><span style="color: rgb(94, 207, 186);">\w\W:</span></h3><p><br/></p><p>\w表示匹配一个字符，包括[a-zA-Z0-9_]</p><p><br/></p><p>找出它的标题和值</p><p><br/></p><p># -*- coding: utf-8 -*-</p><p>import re</p><p><br/></p><p>def re_pattern_syntax_meta_char():</p><p>    # \w\W: [a-zA-Z0-9_]</p><p>    print(re.match(r'(\w+)\s*:\s*(\w+)', 'Name: Joey').groups())</p><p><br/></p><p>if __name__ == '__main__':</p><p>re_pattern_syntax_meta_char()</p><p><br/></p><p>运行结果，这样就可以把标题和结果给它匹配出来。</p><p><br/></p><p><img alt="special17.png" src="images/b220d966f2e5b19ff44f4bab90366514.png" title="f1EJhSCQryVbK6B69H.png"/></p><p><br/></p><p>那如果我们这里加个=会怎么样呢？</p><p><br/></p><p># -*- coding: utf-8 -*-</p><p>import re</p><p><br/></p><p>def re_pattern_syntax_meta_char():</p><p>    # \w\W: [a-zA-Z0-9_]</p><p>    print(re.match(r'(\w+)\s*:\s*(\w+)', 'Name:= Joey').groups())</p><p><br/></p><p>if __name__ == '__main__':</p><p>re_pattern_syntax_meta_char()</p><p><br/></p><p>运行结果，匹配不成功，因为\w+会去匹配字符，它不包含=号。</p><p><br/></p><p><img alt="special18.png" src="images/d18bbe5eaacd4057faff37082a374c60.png" title="xt3H9o5QGFD7wnMn7S.png"/></p><p><br/></p><p><br/></p><p><br/></p><p><span style="color: rgb(192, 0, 0);">【本文由麦子学院独家原创，转载请注明出处并保留原文链接】</span></p><p><br/></p><p>
+</p></p></div>
+        </body></html>

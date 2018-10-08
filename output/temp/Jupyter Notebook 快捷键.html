@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+            <html><head><meta charset="UTF-8">
+            </head><body>
+            <p><a href="https://blog.csdn.net/HeatDeath/article/details/78030902">原文链接</a></p>
+            <p><center><h1>Jupyter Notebook 快捷键</h1></center></p>
+                <div class="article_content clearfix csdn-tracking-statistics" data-dsm="post" data-mod="popu_307" data-pid="blog" id="article_content">
+<div class="article-copyright">
+					版权声明：本文为博主原创文章，未经博主允许不得转载。					https://blog.csdn.net/HeatDeath/article/details/78030902				</div>
+<div class="markdown_views prism-atom-one-dark">
+<!-- flowchart 箭头图标 勿删 -->
+<svg style="display: none;" xmlns="http://www.w3.org/2000/svg"><path d="M5,0 0,2.5 5,5z" id="raphael-marker-block" stroke-linecap="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path></svg>
+<p><a href="http://blog.konghy.cn/2017/05/04/jupyter-notebook-hotkeys/" rel="nofollow" target="_blank">Jupyter Notebook 快捷键使用指南 <br/>
+</a> <br/>
+从命令模式进入编辑模式需按 <code>Enter</code> 键，从编辑模式切换到命令模式需按<code>Esc</code> 键。</p>
+<div class="post-content">
+<p><a href="http://jupyter.org/" rel="nofollow" target="_blank">Jupyter Notebook</a> 是一个交互式笔记本程序, 其有丰富的快捷键来便捷的完成工作。Notebook 有两种键盘输入模式。即命令模式和编辑模式，这与 <a href="http://www.vim.org/" rel="nofollow" target="_blank">Vim</a> 有些类似。在编辑模式下，可以往单元中键入代码或文本，此时单元格被绿色的框线包围，且命令模式下的快捷键不生效。在命令模式下，可以用快捷键命令运行单元格，移动单元格，切换单元格编辑状态等等，此时的单元格被灰色的框线包围，且编辑模式下的快捷键不生效。</p>
+<p>从命令模式进入编辑模式需按 <code>Enter</code> 键，从编辑模式切换到命令模式需按 <code>Esc</code> 键。</p>
+<p>以下两表分别是对命令和编辑两种模式下快捷键的简单说明：</p>
+<h3 id="命令模式快捷键按-esc-键开启">命令模式快捷键（按 Esc 键开启）:</h3>
+<table><thead>
+<tr>
+<th>快捷键</th>
+<th>作用</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Enter</td>
+<td>转入编辑模式</td>
+<td></td>
+</tr>
+<tr>
+<td>Shift-Enter</td>
+<td>运行本单元，选中下个单元</td>
+<td>新单元默认为命令模式</td>
+</tr>
+<tr>
+<td>Ctrl-Enter</td>
+<td>运行本单元</td>
+<td></td>
+</tr>
+<tr>
+<td>Alt-Enter</td>
+<td>运行本单元，在其下插入新单元</td>
+<td>新单元默认为编辑模式</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>单元转入代码状态</td>
+<td></td>
+</tr>
+<tr>
+<td>M</td>
+<td>单元转入 markdown 状态</td>
+<td></td>
+</tr>
+<tr>
+<td>R</td>
+<td>单元转入 raw 状态</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>设定 1 级标题</td>
+<td>仅在 markdown 状态下时建议使用标题相关快捷键，如果单元处于其他状态，则会强制切换到 markdown 状态</td>
+</tr>
+<tr>
+<td>2</td>
+<td>设定 2 级标题</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>设定 3 级标题</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>设定 4 级标题</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>设定 5 级标题</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>设定 6 级标题</td>
+<td></td>
+</tr>
+<tr>
+<td>Up</td>
+<td>选中上方单元</td>
+<td></td>
+</tr>
+<tr>
+<td>K</td>
+<td>选中上方单元</td>
+<td></td>
+</tr>
+<tr>
+<td>Down</td>
+<td>选中下方单元</td>
+<td></td>
+</tr>
+<tr>
+<td>J</td>
+<td>选中下方单元</td>
+<td></td>
+</tr>
+<tr>
+<td>Shift-K</td>
+<td>连续选择上方单元</td>
+<td></td>
+</tr>
+<tr>
+<td>Shift-J</td>
+<td>连续选择下方单元</td>
+<td></td>
+</tr>
+<tr>
+<td>A</td>
+<td>在上方插入新单元</td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td>在下方插入新单元</td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>剪切选中的单元</td>
+<td></td>
+</tr>
+<tr>
+<td>C</td>
+<td>复制选中的单元</td>
+<td></td>
+</tr>
+<tr>
+<td>Shift-V</td>
+<td>粘贴到上方单元</td>
+<td></td>
+</tr>
+<tr>
+<td>V</td>
+<td>粘贴到下方单元</td>
+<td></td>
+</tr>
+<tr>
+<td>Z</td>
+<td>恢复删除的最后一个单元</td>
+<td></td>
+</tr>
+<tr>
+<td>D,D</td>
+<td>删除选中的单元</td>
+<td>连续按两个 D 键</td>
+</tr>
+<tr>
+<td>Shift-M</td>
+<td>合并选中的单元</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-S</td>
+<td>保存当前 NoteBook</td>
+<td></td>
+</tr>
+<tr>
+<td>S</td>
+<td>保存当前 NoteBook</td>
+<td></td>
+</tr>
+<tr>
+<td>L</td>
+<td>开关行号</td>
+<td>编辑框的行号是可以开启和关闭的</td>
+</tr>
+<tr>
+<td>O</td>
+<td>转换输出</td>
+<td></td>
+</tr>
+<tr>
+<td>Shift-O</td>
+<td>转换输出滚动</td>
+<td></td>
+</tr>
+<tr>
+<td>Esc</td>
+<td>关闭页面</td>
+<td></td>
+</tr>
+<tr>
+<td>Q</td>
+<td>关闭页面</td>
+<td></td>
+</tr>
+<tr>
+<td>H</td>
+<td>显示快捷键帮助</td>
+<td></td>
+</tr>
+<tr>
+<td>I,I</td>
+<td>中断 NoteBook 内核</td>
+<td></td>
+</tr>
+<tr>
+<td>0,0</td>
+<td>重启 NoteBook 内核</td>
+<td></td>
+</tr>
+<tr>
+<td>Shift</td>
+<td>忽略</td>
+<td></td>
+</tr>
+<tr>
+<td>Shift-Space</td>
+<td>向上滚动</td>
+<td></td>
+</tr>
+<tr>
+<td>Space</td>
+<td>向下滚动</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="编辑模式快捷键-按-enter-键启动">编辑模式快捷键（ 按 Enter 键启动）:</h3>
+<table><thead>
+<tr>
+<th>快捷键</th>
+<th>作用</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Tab</td>
+<td>代码补全或缩进</td>
+<td></td>
+</tr>
+<tr>
+<td>Shift-Tab</td>
+<td>提示</td>
+<td>输出帮助信息，部分函数、类、方法等会显示其定义原型，如果在其后加 <code>?</code> 再运行会显示更加详细的帮助</td>
+</tr>
+<tr>
+<td>Ctrl-]</td>
+<td>缩进</td>
+<td>向右缩进</td>
+</tr>
+<tr>
+<td>Ctrl-[</td>
+<td>解除缩进</td>
+<td>向左缩进</td>
+</tr>
+<tr>
+<td>Ctrl-A</td>
+<td>全选</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-Z</td>
+<td>撤销</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-Shift-Z</td>
+<td>重做</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-Y</td>
+<td>重做</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-Home</td>
+<td>跳到单元开头</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-Up</td>
+<td>跳到单元开头</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-End</td>
+<td>跳到单元末尾</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-Down</td>
+<td>跳到单元末尾</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-Left</td>
+<td>跳到左边一个字首</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-Right</td>
+<td>跳到右边一个字首</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-Backspace</td>
+<td>删除前面一个字</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-Delete</td>
+<td>删除后面一个字</td>
+<td></td>
+</tr>
+<tr>
+<td>Esc</td>
+<td>切换到命令模式</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-M</td>
+<td>切换到命令模式</td>
+<td></td>
+</tr>
+<tr>
+<td>Shift-Enter</td>
+<td>运行本单元，选中下一单元</td>
+<td>新单元默认为命令模式</td>
+</tr>
+<tr>
+<td>Ctrl-Enter</td>
+<td>运行本单元</td>
+<td></td>
+</tr>
+<tr>
+<td>Alt-Enter</td>
+<td>运行本单元，在下面插入一单元</td>
+<td>新单元默认为编辑模式</td>
+</tr>
+<tr>
+<td>Ctrl-Shift–</td>
+<td>分割单元</td>
+<td>按光标所在行进行分割</td>
+</tr>
+<tr>
+<td>Ctrl-Shift-Subtract</td>
+<td>分割单元</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-S</td>
+<td>保存当前 NoteBook</td>
+<td></td>
+</tr>
+<tr>
+<td>Shift</td>
+<td>忽略</td>
+<td></td>
+</tr>
+<tr>
+<td>Up</td>
+<td>光标上移或转入上一单元</td>
+<td></td>
+</tr>
+<tr>
+<td>Down</td>
+<td>光标下移或转入下一单元</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl-/</td>
+<td>注释整行/撤销注释</td>
+<td>仅代码状态有效</td>
+</tr>
+</tbody></table>
+<p><strong>注：</strong> 如果快捷键被系统中的其它应用占用，则可能会失效</p>
+</div> </div>
+<link href="https://csdnimg.cn/release/phoenix/mdeditor/markdown_views-8cccb36679.css" rel="stylesheet"/>
+</div>
+            </body></html>

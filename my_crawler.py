@@ -56,6 +56,9 @@ class MyCrawler(object):
         elif 'www.jianshu.com' in self.url:  # 简书
             self.key_title = '.title'
             self.key_content = '.article'
+        elif 'www.maiziedu.com' in self.url:  # 麦子学院
+            self.key_title = '.cont h1'
+            self.key_content = '.cont'
         else:
             self.key_title = ''
             self.key_content = ''
@@ -148,7 +151,7 @@ def main():
     # 简书
     urls = """
     
-https://blog.csdn.net/HeatDeath/article/details/78030902
+http://www.maiziedu.com/wiki/crawler/introduce/
 
 
         """
