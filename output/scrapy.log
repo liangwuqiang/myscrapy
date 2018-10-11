@@ -1,0 +1,660 @@
+2018-10-11 15:07:52 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-10-11 15:07:52 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.6 (default, Sep 12 2018, 18:26:19) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-10-11 15:08:12 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-10-11 15:08:12 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.6 (default, Sep 12 2018, 18:26:19) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-10-11 15:08:12 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'example', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'example.spiders', 'SPIDER_MODULES': ['example.spiders']}
+2018-10-11 15:08:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-11 15:08:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-11 15:08:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-11 15:08:12 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2018-10-11 15:08:12 [scrapy.core.engine] INFO: Spider opened
+2018-10-11 15:08:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-11 15:08:12 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-10-11 15:08:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jandan.net/ooxx> (referer: None)
+2018-10-11 15:08:12 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-11 15:08:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 213,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15115,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 11, 7, 8, 12, 922052),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 716517376,
+ 'memusage/startup': 716517376,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 10, 11, 7, 8, 12, 472384)}
+2018-10-11 15:08:12 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-11 15:10:02 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-10-11 15:10:02 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.6 (default, Sep 12 2018, 18:26:19) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-10-11 15:10:02 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'example', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'example.spiders', 'SPIDER_MODULES': ['example.spiders']}
+2018-10-11 15:10:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-11 15:10:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-11 15:10:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-11 15:10:02 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2018-10-11 15:10:02 [scrapy.core.engine] INFO: Spider opened
+2018-10-11 15:10:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-11 15:10:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-10-11 15:10:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jandan.net/ooxx> (referer: None)
+2018-10-11 15:10:02 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jandan.net/ooxx> (referer: None)
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/ubuntu/PyProjects/MyScrapy/example/example/spiders/meizi.py", line 12, in parse
+    item['image_urls'] = response.xpath('//img//@src').extract()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/scrapy/item.py", line 66, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'ExampleItem does not support field: image_urls'
+2018-10-11 15:10:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-11 15:10:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 213,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15162,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 11, 7, 10, 2, 658189),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 7,
+ 'memusage/max': 727166976,
+ 'memusage/startup': 727166976,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/KeyError': 1,
+ 'start_time': datetime.datetime(2018, 10, 11, 7, 10, 2, 330416)}
+2018-10-11 15:10:02 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-11 15:10:13 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-10-11 15:10:13 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.6 (default, Sep 12 2018, 18:26:19) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-10-11 15:10:13 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'example', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'example.spiders', 'SPIDER_MODULES': ['example.spiders']}
+2018-10-11 15:10:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-11 15:10:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-11 15:10:14 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-11 15:10:14 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2018-10-11 15:10:14 [scrapy.core.engine] INFO: Spider opened
+2018-10-11 15:10:14 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-11 15:10:14 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-10-11 15:10:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jandan.net/ooxx> (referer: None)
+2018-10-11 15:10:14 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-11 15:10:14 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 213,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15156,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 11, 7, 10, 14, 301576),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 727658496,
+ 'memusage/startup': 727658496,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 10, 11, 7, 10, 14, 83734)}
+2018-10-11 15:10:14 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-11 15:10:44 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-10-11 15:10:44 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.6 (default, Sep 12 2018, 18:26:19) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-10-11 15:10:44 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'example', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'example.spiders', 'SPIDER_MODULES': ['example.spiders']}
+2018-10-11 15:10:44 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-11 15:10:44 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-11 15:10:44 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-11 15:10:44 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2018-10-11 15:10:44 [scrapy.core.engine] INFO: Spider opened
+2018-10-11 15:10:44 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-11 15:10:44 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-10-11 15:10:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jandan.net/ooxx> (referer: None)
+2018-10-11 15:10:44 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jandan.net/ooxx> (referer: None)
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/ubuntu/PyProjects/MyScrapy/example/example/spiders/meizi.py", line 12, in parse
+    item['image_urls'] = response.xpath('//img//@src').extract()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/scrapy/item.py", line 66, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'ExampleItem does not support field: image_urls'
+2018-10-11 15:10:44 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-11 15:10:44 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 213,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15156,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 11, 7, 10, 44, 880386),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 7,
+ 'memusage/max': 728207360,
+ 'memusage/startup': 728207360,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/KeyError': 1,
+ 'start_time': datetime.datetime(2018, 10, 11, 7, 10, 44, 334961)}
+2018-10-11 15:10:44 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-11 15:11:27 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-10-11 15:11:27 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.6 (default, Sep 12 2018, 18:26:19) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-10-11 15:11:27 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'example', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'example.spiders', 'SPIDER_MODULES': ['example.spiders']}
+2018-10-11 15:11:27 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-11 15:11:27 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-11 15:11:27 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-11 15:11:27 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2018-10-11 15:11:27 [scrapy.core.engine] INFO: Spider opened
+2018-10-11 15:11:27 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-11 15:11:27 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-10-11 15:11:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jandan.net/ooxx> (referer: None)
+2018-10-11 15:11:27 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-11 15:11:27 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 213,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15155,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 11, 7, 11, 27, 781256),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 731881472,
+ 'memusage/startup': 731881472,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 10, 11, 7, 11, 27, 331861)}
+2018-10-11 15:11:27 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-11 15:14:10 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-10-11 15:14:10 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.6 (default, Sep 12 2018, 18:26:19) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-10-11 15:14:10 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'example', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'example.spiders', 'SPIDER_MODULES': ['example.spiders']}
+2018-10-11 15:14:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-11 15:14:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-11 15:14:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-11 15:14:10 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2018-10-11 15:14:10 [scrapy.core.engine] INFO: Spider opened
+2018-10-11 15:14:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-11 15:14:10 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-10-11 15:14:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jandan.net/ooxx> (referer: None)
+2018-10-11 15:14:11 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-11 15:14:11 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 213,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15167,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 11, 7, 14, 11, 333354),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 737263616,
+ 'memusage/startup': 737263616,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 10, 11, 7, 14, 10, 861739)}
+2018-10-11 15:14:11 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-11 15:15:00 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-10-11 15:15:00 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.6 (default, Sep 12 2018, 18:26:19) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-10-11 15:15:00 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'example', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'example.spiders', 'SPIDER_MODULES': ['example.spiders']}
+2018-10-11 15:15:00 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-11 15:15:00 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-11 15:15:00 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-11 15:15:00 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2018-10-11 15:15:00 [scrapy.core.engine] INFO: Spider opened
+2018-10-11 15:15:00 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-11 15:15:00 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-10-11 15:15:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jandan.net/ooxx> (referer: None)
+2018-10-11 15:15:01 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-11 15:15:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 213,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15165,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 11, 7, 15, 1, 31403),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 738508800,
+ 'memusage/startup': 738508800,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 10, 11, 7, 15, 0, 585680)}
+2018-10-11 15:15:01 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-11 15:15:37 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-10-11 15:15:37 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.6 (default, Sep 12 2018, 18:26:19) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-10-11 15:15:37 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'example', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'example.spiders', 'SPIDER_MODULES': ['example.spiders']}
+2018-10-11 15:15:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-11 15:15:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-11 15:15:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-11 15:15:37 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2018-10-11 15:15:37 [scrapy.core.engine] INFO: Spider opened
+2018-10-11 15:15:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-11 15:15:37 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-10-11 15:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jandan.net/ooxx> (referer: None)
+2018-10-11 15:15:37 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-11 15:15:37 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 213,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15164,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 11, 7, 15, 37, 795051),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 739840000,
+ 'memusage/startup': 739840000,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 10, 11, 7, 15, 37, 308523)}
+2018-10-11 15:15:37 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-11 15:16:01 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-10-11 15:16:01 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.6 (default, Sep 12 2018, 18:26:19) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-10-11 15:16:01 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'example', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'example.spiders', 'SPIDER_MODULES': ['example.spiders']}
+2018-10-11 15:16:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-11 15:16:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-11 15:16:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-11 15:16:01 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2018-10-11 15:16:01 [scrapy.core.engine] INFO: Spider opened
+2018-10-11 15:16:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-11 15:16:01 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-10-11 15:16:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jandan.net/ooxx> (referer: None)
+2018-10-11 15:16:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-11 15:16:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 213,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15164,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 11, 7, 16, 2, 289212),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 740823040,
+ 'memusage/startup': 740823040,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 10, 11, 7, 16, 1, 848934)}
+2018-10-11 15:16:02 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-11 15:20:29 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-10-11 15:20:29 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.6 (default, Sep 12 2018, 18:26:19) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-10-11 15:20:29 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'example', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'example.spiders', 'SPIDER_MODULES': ['example.spiders']}
+2018-10-11 15:20:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-11 15:20:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-11 15:20:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-11 15:20:29 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2018-10-11 15:20:29 [scrapy.core.engine] INFO: Spider opened
+2018-10-11 15:20:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-11 15:20:29 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-10-11 15:20:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jandan.net/ooxx> (referer: None)
+2018-10-11 15:20:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-11 15:20:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 213,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15203,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 11, 7, 20, 30, 171462),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 741740544,
+ 'memusage/startup': 741740544,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 10, 11, 7, 20, 29, 730980)}
+2018-10-11 15:20:30 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-11 15:56:18 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-10-11 15:56:18 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.6 (default, Sep 12 2018, 18:26:19) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-10-11 15:56:18 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'example', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'example.spiders', 'SPIDER_MODULES': ['example.spiders']}
+2018-10-11 15:56:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-11 15:56:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-11 15:56:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-11 15:56:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2018-10-11 15:56:18 [scrapy.core.engine] INFO: Spider opened
+2018-10-11 15:56:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-11 15:56:18 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-10-11 15:56:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jandan.net/ooxx> (referer: None)
+2018-10-11 15:56:19 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-11 15:56:19 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 213,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15382,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 11, 7, 56, 19, 225938),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 745840640,
+ 'memusage/startup': 745840640,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 10, 11, 7, 56, 18, 725276)}
+2018-10-11 15:56:19 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-11 15:56:40 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: example)
+2018-10-11 15:56:40 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.6 (default, Sep 12 2018, 18:26:19) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.15.0-36-generic-x86_64-with-Ubuntu-18.04-bionic
+2018-10-11 15:56:40 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'example', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'example.spiders', 'SPIDER_MODULES': ['example.spiders']}
+2018-10-11 15:56:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-11 15:56:40 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-11 15:56:40 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-11 15:56:40 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2018-10-11 15:56:40 [scrapy.core.engine] INFO: Spider opened
+2018-10-11 15:56:40 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-11 15:56:40 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-10-11 15:56:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jandan.net/ooxx> (referer: None)
+2018-10-11 15:56:41 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-11 15:56:41 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 213,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15382,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 11, 7, 56, 41, 438177),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 745840640,
+ 'memusage/startup': 745840640,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 10, 11, 7, 56, 40, 981358)}
+2018-10-11 15:56:41 [scrapy.core.engine] INFO: Spider closed (finished)

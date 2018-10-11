@@ -151,7 +151,7 @@ def main():
     # 简书
     urls = """
     
-http://www.maiziedu.com/wiki/crawler/introduce/
+https://www.cnblogs.com/cathy960703/p/7389075.html
 
 
         """

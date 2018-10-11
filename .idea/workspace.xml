@@ -2,239 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0a2b851-dbc5-408c-b71f-f009f2638c45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/batch_crawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/spiders/meizi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jupyter/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter/test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/batch_crawler-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/test-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/股票数据下载测试-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/example/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_crawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Jupyter Notebook 快捷键.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫基础Selenium库的使用（二十二01）.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫基础Selenium库的使用（二十二01）_files/5739a2d83325bad4b3a01436575147e8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫基础Selenium库的使用（二十二01）_files/656f78e0d53fc8c49cee18e1f06672cd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫1057.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫1468.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫1945.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫2278.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫2834.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫3066.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫3266.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫3692.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫4031.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫4453.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫5112.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫5508.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫5754.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫6015.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫6306.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫647.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫6679.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫6928.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫7214.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫7466.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫8622.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.files/Python 爬虫实战(2)：股票数据定向爬虫9073.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫_files/0a269f5764c46b304630635ba6b1843b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫_files/25b370233f7ed2bcc9a1102929854556.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫_files/87d6d3671611124eb6ba3d72df5f805c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫_files/a8ee06194668106568176eafd9e290a2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫_files/b411c23a9a66f6a3ca9d6ba157cfe218.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Python 爬虫实战(2)：股票数据定向爬虫_files/eddc8f855b6f87393df119420462a53d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/04630c435bc6899803a0cfecf364559c1dbaaacc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/0613f0d6b329ceaa90fd3890d7a1ccb5841e10e8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/09c5fe07695d356c8778d74497e01c95070bef91.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/0a00638d071db77f5df109f10650bc61e237a2e9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/0a7b72f15257fb2271568f116ca0ae37a8f29538.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/0d134308f5d4ee1e4ab46de720a5ec3c63a8b516.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/13fc69d8c2c30af1478e9d58233c33ca5a88a4aa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/171146f8fbb308475cbf19494046aded55c0e965.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/1bdcec3f58324dff7ff3bef65081fd956447eca8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/1c63d657ab91646d7587b55c2111cb2e6229b069.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/1ca25b3596061f2e53cfc68d436657b34a3c5256.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/271edc549e0511afa361c4b6030eea313b9f290e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/299512d4b9db5b777e53c27a8db27381d2d4c69e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/2a7f20bcec6e39a1de970a8b5724647c8c1d15ec.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/30600ba63a102a00b4da4d657661149f23d5bd21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/3bd9e773845dda2d04c4172b888adea2c828d213.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/3c1a9862b5b73b1cfb3e971d208c5a267f24ffb3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/3c1c3532f7d83ff3853529b6fd575ff76fae31dd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/3f0c2f7f9b650fd0e5c4f5a1b117d595e516277f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/40e49575a16d217a86a32428c31185d0e6fa10c7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/4416db2e7fce2f59d027fe0ad2851298a55c9e65.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/45fa083fdf883f6562db39f471038f07378e4bcd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/4dbe5043a7d56c41fae4eed7639b32a9479148bb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/4df2f05a274a48c6d6ace446ef3a5708a354128a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/4f86a88c16e84b44393f8b5dc8c6a137140d4321.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/50186278e9e6897a8b79e8f4f95052601cc90504.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/508f514746ae1867791b9b1eb6b20b04cf3bda2f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/56d47d6dab251d2e3e53d2419c393c2b6aa2a1e2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/57826f635ffeaeb44d178f055b406f0869ec291d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/5ca41d0cecdc91a3a99abce8353de2f309cd41c9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/672d90214b04d832fd697be49a130807a4fd9482.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/6ea4cb81b467978c3665bd0e4630ceeaf6347fa6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/6f7f146326f54373f9c22084edfe986408717785.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/77ed3ecc49aca76ffde1b0dc1392471b8b52c11c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/7936161313991ffc72bfaad2767f80594c4d76bd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/794284f56a248049b41fa6e0844830018e23241b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/7a8f32cca2ee78efed34fa7dc519227ecaaf5f91.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/7b6c88aff5ecc3818ff8beabaf5ca978e2041bc4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/7d93bd3d5995a093e6c3080f9440b6606ff41ba6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/805952b29f6e211922c295b861e2f1fe78859f9d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/89294ded85f1b0e48e8799d884d8579912c8bb01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/8fd3f855bbfe495018ad05ef60a8430cfa92be76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/999678d7f2fd42b4d9e498d8471f326e23cdc5f9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/9a167d2c9b4d114cf541ea4971b72caccc8a5081.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/9b5dea3bfc9987883a455fe2f3b756a6d25add2a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/9bf58081162841ede1315bb86b16677e7cc310ee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/aff614ad2ee10d994c944c23b26d87b8a25597ec.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/b60b56c114e0c232b022c884a179cf25ca5d2277.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/b978a5371bd67f76ec6e9843db421b43d6f39676.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/c9a63ef0d81df8d34d4e3d0f37508fcac6e3f057.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/c9a67fa07f799a23c370b21e0ab88aa01be7d7ca.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/cadd4f3470f9c6ec727a7de4dc1695ff8d35435d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/cbe3727fc59e4d8a39c5d1e14392112bb0439fc9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/cee4158794cd2ac42c2e0021fc356097d332db28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/d077b457dd558b17fb3aeeebb72ccc1b73fcc43d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/d4c4a057a31b3f6789a705cac7882959da0061d6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/d7c0842637c16b0ff25bccd9c20efe41375af3ed.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/d98f88b822f5ddfa6ecd6a7485b030aaacad9dfa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/d9f393d9c87d434f70968dd306a8553d7711b873.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/da2d9e47e882a1df9469c69e2f36b82d4361b602.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/da74541b9dcf3b38e62a73c97e704ad315c93bfd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/e2b2ed14ad71f9a3186db8d6dd2d52aaf14841fa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/e516c48012e9eb8fffbb259fbd17b4552d6fd689.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/e53cd6dcbc4d11aceba6a9520bfdb9816538e500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/e8d63cc5fceeeeed79cd99d106a18cf06d0a4bd3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/ea01c89070b17d92031479f2baf46a3be9e829b6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/ec5d0384b7cc825c06a16802b31f0f326ef090d1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/f55fa1aa96982f67906a034e296dd535d86cea11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/fabcadbffc9dce76f7dac82de96dbba3f866076d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full/fde64e866a4382f0a398046343e835d73e71302a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/python之r.raise_for_status().html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/results.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/scrapy.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/07492f34c98873bbede3c415c3206a41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/09ba9722e1cefc7f03461ef12f190d79.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/115f388fda6989764b3270696b511989.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/1f032d800f5416060ab4af13d8dd0317.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/35fd3119eaf8a2319203dad5354658ad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/3cc413c0113c8c602c0280f08750d34b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/41c36edd51d86778063c3bf9fe6d26ad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/4cd0ae4012a51c3d6bf540ee2077dcd4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/717715aff3fe0dafa90868bf58379e63.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/7312a18725007f929aa8a978e10c7ff5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/88d30e0bbe0a23244db291967ef5411d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/8d72284c36158c41636bf5f8378cc488.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/975a4fac2017c4bbf1e122bf76b767ef.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/b88e33a2b7559f89c7d7f872e94a46ae.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/ec0c5234c28b881851be02be238a2a04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（1）：网易云音乐歌单_files/f21070a6c5768dbc1785792b12807813.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.files/手把手教你写网络爬虫（2）：迷你爬虫架构1388.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.files/手把手教你写网络爬虫（2）：迷你爬虫架构2752.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.files/手把手教你写网络爬虫（2）：迷你爬虫架构278.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.files/手把手教你写网络爬虫（2）：迷你爬虫架构2876.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.files/手把手教你写网络爬虫（2）：迷你爬虫架构3207.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.files/手把手教你写网络爬虫（2）：迷你爬虫架构3614.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.files/手把手教你写网络爬虫（2）：迷你爬虫架构4006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.files/手把手教你写网络爬虫（2）：迷你爬虫架构4137.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.files/手把手教你写网络爬虫（2）：迷你爬虫架构4414.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.files/手把手教你写网络爬虫（2）：迷你爬虫架构5091.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.files/手把手教你写网络爬虫（2）：迷你爬虫架构5355.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.files/手把手教你写网络爬虫（2）：迷你爬虫架构660.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.files/手把手教你写网络爬虫（2）：迷你爬虫架构805.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构_files/0eec07ed052b03b0f22c08382b130fd7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构_files/11b5ae750bd6e590827ae665880093fc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构_files/3984248908152405654cade9c2e43d17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构_files/3b9a8f102ac7586a91c131fcbe15b1ae.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构_files/43152f43f34c1475f16317bb3d548ec5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构_files/4f91ba59cef87d01699751a27baa02e6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构_files/55c7b1eeffc1337454a2f30f37290bd7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构_files/5739b9fcc00c0b7d052286b147157c6f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构_files/5a6fa8e5007f1f42ce6120371ae8ec68.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构_files/c4f2f0528aa6f4523666f949414004b0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构_files/c9b5e6070460a007e5c2de7230230e4f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构_files/d01b0a0c3d62dc6ec04f78d404b0ce99.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（2）：迷你爬虫架构_files/f680becab7cdd117488ad7299032fe84.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（3）：开源爬虫框架对比.files/手把手教你写网络爬虫（3）：开源爬虫框架对比1090.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（3）：开源爬虫框架对比.files/手把手教你写网络爬虫（3）：开源爬虫框架对比1582.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（3）：开源爬虫框架对比.files/手把手教你写网络爬虫（3）：开源爬虫框架对比2222.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（3）：开源爬虫框架对比.files/手把手教你写网络爬虫（3）：开源爬虫框架对比280.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（3）：开源爬虫框架对比.files/手把手教你写网络爬虫（3）：开源爬虫框架对比2996.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（3）：开源爬虫框架对比.files/手把手教你写网络爬虫（3）：开源爬虫框架对比840.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（3）：开源爬虫框架对比.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（3）：开源爬虫框架对比_files/1eb89c8a02a5de169b5ee14b7f879e65.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（3）：开源爬虫框架对比_files/4ada11cc7ed87be7f40085842ad1679a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（3）：开源爬虫框架对比_files/52d95cc4a3e53c2b369ef0ecbde53668.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（3）：开源爬虫框架对比_files/5662a48cede207085d16eff40cc8c9d0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（3）：开源爬虫框架对比_files/87f04d8582155922ae75c13c0ecf23a1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（3）：开源爬虫框架对比_files/a0593f3570051d74d613cd8c798f17ee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门.files/手把手教你写网络爬虫（4）：Scrapy入门1808.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门.files/手把手教你写网络爬虫（4）：Scrapy入门2661.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门.files/手把手教你写网络爬虫（4）：Scrapy入门2724.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门.files/手把手教你写网络爬虫（4）：Scrapy入门3208.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门.files/手把手教你写网络爬虫（4）：Scrapy入门325.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门.files/手把手教你写网络爬虫（4）：Scrapy入门4169.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门.files/手把手教你写网络爬虫（4）：Scrapy入门4251.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门.files/手把手教你写网络爬虫（4）：Scrapy入门5192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门.files/手把手教你写网络爬虫（4）：Scrapy入门5778.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门.files/手把手教你写网络爬虫（4）：Scrapy入门6358.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门.files/手把手教你写网络爬虫（4）：Scrapy入门637.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门_files/57532f2850f19199bd950f40d808477a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门_files/999e08b3119b855f6ac9e887f513374b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（4）：Scrapy入门_files/fbdce2393a8daa31078d6794d2c36e4d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战.files/手把手教你写网络爬虫（5）：PhantomJS实战1388.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战.files/手把手教你写网络爬虫（5）：PhantomJS实战1662.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战.files/手把手教你写网络爬虫（5）：PhantomJS实战2484.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战.files/手把手教你写网络爬虫（5）：PhantomJS实战2662.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战.files/手把手教你写网络爬虫（5）：PhantomJS实战2762.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战.files/手把手教你写网络爬虫（5）：PhantomJS实战2956.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战.files/手把手教你写网络爬虫（5）：PhantomJS实战3121.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战.files/手把手教你写网络爬虫（5）：PhantomJS实战3382.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战.files/手把手教你写网络爬虫（5）：PhantomJS实战551.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战.files/手把手教你写网络爬虫（5）：PhantomJS实战778.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战.files/手把手教你写网络爬虫（5）：PhantomJS实战808.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战_files/03ccb79337aa81481b40a9ae87a292a8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战_files/1ea102d6952a90606b09e37d6d18c50e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战_files/5c1578cf0699e6ab0568b43f0b8913da.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战_files/6261d892e3f57d42631f51e22093dae3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战_files/7836661d413e05c15b3dcf5451ffc8c4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（5）：PhantomJS实战_files/eb408283d6c16b67157847ba44abfc65.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫.files/手把手教你写网络爬虫（6）：分布式爬虫1299.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫.files/手把手教你写网络爬虫（6）：分布式爬虫2566.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫.files/手把手教你写网络爬虫（6）：分布式爬虫277.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫.files/手把手教你写网络爬虫（6）：分布式爬虫3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫.files/手把手教你写网络爬虫（6）：分布式爬虫3479.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫.files/手把手教你写网络爬虫（6）：分布式爬虫4636.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫.files/手把手教你写网络爬虫（6）：分布式爬虫5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫_files/3541d107d959471550b70a8fe919445a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫_files/4e97b1f0fc88a1529c71b6ae7f20b0e5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫_files/6e1d2c3ba2902ffe37631b7576801031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫_files/832ef4ae9efeb6f8785d4ed2931e59db.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫_files/ab025b4c6e628c0ca03572dbf9933539.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫_files/d33a82cbb0c7ecb8884526cae29b70c3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（6）：分布式爬虫_files/e4752a83da1ffe9a417deea91e6ad676.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（7）：URL去重.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（7）：URL去重_files/3a8a603d50fbc71d5d10cb67c1c6f12d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（7）：URL去重_files/3bed8349d7d3c7b2bee665232ca2631d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（7）：URL去重_files/c69c98559e034e91d9d159cf167484ec.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（8）：彻底解决乱码问题.files/手把手教你写网络爬虫（8）：彻底解决乱码问题1074.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（8）：彻底解决乱码问题.files/手把手教你写网络爬虫（8）：彻底解决乱码问题1305.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（8）：彻底解决乱码问题.files/手把手教你写网络爬虫（8）：彻底解决乱码问题2267.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（8）：彻底解决乱码问题.files/手把手教你写网络爬虫（8）：彻底解决乱码问题2551.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（8）：彻底解决乱码问题.files/手把手教你写网络爬虫（8）：彻底解决乱码问题3636.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（8）：彻底解决乱码问题.files/手把手教你写网络爬虫（8）：彻底解决乱码问题3673.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（8）：彻底解决乱码问题.files/手把手教你写网络爬虫（8）：彻底解决乱码问题369.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（8）：彻底解决乱码问题.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（8）：彻底解决乱码问题_files/2f463af9e178750cd794ef13e34f4c41.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（8）：彻底解决乱码问题_files/55e5964c77df03394e5d3c3bbe1de256.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（8）：彻底解决乱码问题_files/5a59ddddef0b6bbeabac7be1030a9de0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（8）：彻底解决乱码问题_files/d878c9c016cdc1c2d36f9f9ed7c69153.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/手把手教你写网络爬虫/手把手教你写网络爬虫（8）：彻底解决乱码问题_files/fe91fbbca58604b054ab4427587249d7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/麦子学院python爬虫基础/Python爬虫基础课程介绍.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/麦子学院python爬虫基础/python爬虫之http协议.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/麦子学院python爬虫基础/python爬虫之url.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -298,14 +76,46 @@
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
+    <session id="-192391973">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="365" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="365" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="ipynb" value="1" />
+          <entry key="py" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="IPNB" value="1" />
+          <entry key="Python" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="113" column="42" selection-start-line="113" selection-start-column="42" selection-end-line="113" selection-end-column="42" />
+            <state relative-caret-position="243">
+              <caret line="163" column="10" selection-start-line="163" selection-start-column="10" selection-end-line="163" selection-end-column="10" />
               <folding>
                 <element signature="e#32#46#0" expanded="true" />
               </folding>
@@ -314,13 +124,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stock.py">
+        <entry file="file://$PROJECT_DIR$/example/spiders/xici.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="26" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/example/spiders/meizi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/items.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -347,24 +184,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/example/items.py" />
         <option value="$PROJECT_DIR$/example/settings.py" />
         <option value="$PROJECT_DIR$/example/spiders/tm_goods.py" />
         <option value="$PROJECT_DIR$/wang_yi_yun.py" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/股票数据下载测试.ipynb" />
         <option value="$PROJECT_DIR$/所有股票.ipynb" />
         <option value="$PROJECT_DIR$/test.ipynb" />
         <option value="$PROJECT_DIR$/.ignore" />
         <option value="$PROJECT_DIR$/stock.py" />
-        <option value="$PROJECT_DIR$/my_crawler.py" />
         <option value="$PROJECT_DIR$/batch_crawler.py" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/example/items.py" />
+        <option value="$PROJECT_DIR$/example/spiders/meizi.py" />
+        <option value="$PROJECT_DIR$/my_crawler.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="1259" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1782" />
+    <option name="y" value="560" />
+    <option name="width" value="1249" />
     <option name="height" value="701" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -396,6 +235,22 @@
               <item name="example" type="b2602c69:ProjectViewProjectNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -404,7 +259,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/output" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -419,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.batch_crawler">
+  <component name="RunManager" selected="Python.MyCrawler">
     <configuration name="example" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="example" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -552,9 +407,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MyCrawler" />
         <item itemvalue="Python.batch_crawler" />
         <item itemvalue="Python.stock" />
-        <item itemvalue="Python.MyCrawler" />
         <item itemvalue="Python.wang_yi_yun" />
       </list>
     </recent_temporary>
@@ -573,15 +428,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1440" height="826" extended-state="6" />
+    <frame x="1782" y="560" width="1249" height="701" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19788733" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22864117" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32862645" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37740692" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4584775" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.12259194" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -608,18 +463,8 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/output/scrapy.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12540">
-          <caret line="660" column="27" lean-forward="true" selection-start-line="660" selection-start-column="27" selection-end-line="660" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/results.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-942" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/output/scrapy.log" />
+    <entry file="file://$PROJECT_DIR$/output/results.csv" />
     <entry file="file://$PROJECT_DIR$/topgoods/topgoods/items.py" />
     <entry file="file://$PROJECT_DIR$/topgoods/topgoods/settings.py" />
     <entry file="file://$PROJECT_DIR$/topgoods/topgoods/spiders/tm_goods.py" />
@@ -627,13 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="90" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -675,20 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wang_yi_yun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp.html" />
     <entry file="file://$PROJECT_DIR$/playlist.csv" />
     <entry file="file://$PROJECT_DIR$/所有股票.ipynb" />
@@ -715,9 +539,10 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/batch_crawler.py" />
     <entry file="file://$PROJECT_DIR$/stock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="342">
           <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -725,22 +550,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/batch_crawler.py">
+    <entry file="file://$PROJECT_DIR$/example/spiders/xici.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="342">
+          <caret line="19" column="26" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wang_yi_yun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/batch_crawler.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="163" column="10" selection-start-line="163" selection-start-column="10" selection-end-line="163" selection-end-column="10" />
           <folding>
             <element signature="e#32#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_crawler.py">
+    <entry file="file://$PROJECT_DIR$/example/spiders/meizi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="113" column="42" selection-start-line="113" selection-start-column="42" selection-end-line="113" selection-end-column="42" />
+        <state relative-caret-position="266">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding>
-            <element signature="e#32#46#0" expanded="true" />
+            <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -27,5 +27,6 @@ class ExampleItem(scrapy.Item):
     COMPANY_ADDRESS = scrapy.Field()
 
     # 图片链接
-    file_urls = scrapy.Field()
+    image_urls = scrapy.Field()
+
 
