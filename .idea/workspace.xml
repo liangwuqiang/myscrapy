@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0a2b851-dbc5-408c-b71f-f009f2638c45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/example/spiders/meizi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/batch_crawler-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/test-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/股票数据下载测试-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/example/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_crawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/麦子学院python爬虫基础/Python爬虫基础课程介绍.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/麦子学院python爬虫基础/python爬虫之http协议.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/麦子学院python爬虫基础/python爬虫之url.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/example/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/example/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/spiders/meizi.py" beforeDir="false" afterPath="$PROJECT_DIR$/example/spiders/meizi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,29 +73,30 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="365" />
+          <entry key="py" value="437" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="365" />
+          <entry key="Python" value="437" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ipynb" value="1" />
-          <entry key="py" value="6" />
+          <entry key="py" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IPNB" value="1" />
-          <entry key="Python" value="6" />
+          <entry key="Python" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -114,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="2983">
               <caret line="163" column="10" selection-start-line="163" selection-start-column="10" selection-end-line="163" selection-end-column="10" />
               <folding>
                 <element signature="e#32#46#0" expanded="true" />
@@ -132,14 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/spiders/meizi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="589">
+              <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -147,8 +137,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="522">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/example/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
             </state>
           </provider>
         </entry>
@@ -184,7 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/example/settings.py" />
         <option value="$PROJECT_DIR$/example/spiders/tm_goods.py" />
         <option value="$PROJECT_DIR$/wang_yi_yun.py" />
         <option value="$PROJECT_DIR$/股票数据下载测试.ipynb" />
@@ -195,14 +202,16 @@
         <option value="$PROJECT_DIR$/batch_crawler.py" />
         <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/example/items.py" />
-        <option value="$PROJECT_DIR$/example/spiders/meizi.py" />
         <option value="$PROJECT_DIR$/my_crawler.py" />
+        <option value="$PROJECT_DIR$/example/spiders/meizi.py" />
+        <option value="$PROJECT_DIR$/example/pipelines.py" />
+        <option value="$PROJECT_DIR$/example/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1782" />
-    <option name="y" value="560" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="176" />
+    <option name="y" value="27" />
     <option name="width" value="1249" />
     <option name="height" value="701" />
   </component>
@@ -428,10 +437,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1782" y="560" width="1249" height="701" extended-state="0" />
+    <frame x="0" y="25" width="1440" height="826" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22864117" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19788733" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -468,24 +477,10 @@
     <entry file="file://$PROJECT_DIR$/topgoods/topgoods/items.py" />
     <entry file="file://$PROJECT_DIR$/topgoods/topgoods/settings.py" />
     <entry file="file://$PROJECT_DIR$/topgoods/topgoods/spiders/tm_goods.py" />
-    <entry file="file://$PROJECT_DIR$/example/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -544,30 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/spiders/xici.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="26" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -587,7 +558,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="2983">
           <caret line="163" column="10" selection-start-line="163" selection-start-column="10" selection-end-line="163" selection-end-column="10" />
           <folding>
             <element signature="e#32#46#0" expanded="true" />
@@ -595,13 +566,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/example/spiders/xici.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="26" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/example/spiders/meizi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="589">
+          <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>

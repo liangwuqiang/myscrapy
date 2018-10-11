@@ -91,7 +91,8 @@ ROBOTSTXT_OBEY = False
 
 LOG_FILE = "scrapy.log"
 
-ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
+# ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}  # 优先执行哪个管线
+ITEM_PIPELINES = {'example.pipelines.ExamplePipeline': 1}
 
-IMAGES_URLS_FIELD = 'file_urls'
+IMAGES_URLS_FIELD = 'image_urls'
 IMAGES_STORE = r'.'
